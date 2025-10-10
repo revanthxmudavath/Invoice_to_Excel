@@ -1,0 +1,1108 @@
+2025-08-30 10:19:46,441 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 10:19:46,556 - file_processor - INFO - Loaded image: f2.png
+2025-08-30 10:19:46,557 - __main__ - INFO - Processed file into 1 images
+2025-08-30 10:19:56,975 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-08-30 10:19:56,976 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Error code: 404 - {'error': {'message': 'The model `gpt-4-vision-preview` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-08-30 10:19:56,976 - __main__ - ERROR - Error during invoice parsing: Error code: 404 - {'error': {'message': 'The model `gpt-4-vision-preview` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-08-30 10:20:32,479 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 10:20:32,681 - file_processor - INFO - Loaded image: f2.png
+2025-08-30 10:20:32,681 - __main__ - INFO - Processed file into 1 images
+2025-08-30 10:21:45,462 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 10:21:45,478 - openai_client - ERROR - Failed to parse JSON response: Unterminated string starting at: line 18 column 14 (char 525)
+2025-08-30 10:21:45,479 - openai_client - ERROR - Raw content: {
+  "vendor_name": "Breakthru Beverage Illinois, LLC",
+  "vendor_address": "PO BOX 340 Berwyn, IL 60402",
+  "vendor_phone": "(708) 298-3000 Fax: (708) 298-3586",
+  "invoice_number": "122041188",
+  "customer_number": "0700417320",
+  "route": "2211",
+  "stop": 25,
+  "terms": "C.O.D.",
+  "license": "141504847",
+  "exp_date": "04/30/2026",
+  "chain": "09200014401",
+  "delivery_number": "0829203457",
+  "invoice_date": "06/24/2025",
+  "due_date": "07/24/2025",
+  "po_number": null,
+  "special_instructions": null,
+  "barcode": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+2025-08-30 10:21:45,549 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 525)
+2025-08-30 10:21:45,549 - __main__ - ERROR - Error during invoice parsing: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 525)
+2025-08-30 10:45:45 - root - INFO - ============================================================
+2025-08-30 10:45:45 - root - INFO - Invoice Parser Application Started
+2025-08-30 10:45:45 - root - INFO - Log level: INFO
+2025-08-30 10:45:45 - root - INFO - Log file: invoice_parser.log
+2025-08-30 10:45:45 - root - INFO - Timestamp: 2025-08-30T10:45:45.083732
+2025-08-30 10:45:45 - root - INFO - ============================================================
+2025-08-30 10:45:46 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 10:45:46 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 10:45:46 - file_processor - INFO - Loading image: f2.png
+2025-08-30 10:45:46 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 10:45:46 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 10:45:46 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 10:47:00 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 10:47:00 - invoice_parser - ERROR - Failed to parse JSON response: Unterminated string starting at: line 18 column 14 (char 525)
+2025-08-30 10:47:00 - invoice_parser - ERROR - Raw content: {
+  "vendor_name": "Breakthru Beverage Illinois, LLC",
+  "vendor_address": "PO BOX 340 Berwyn, IL 60402",
+  "vendor_phone": "(708) 298-3000 Fax: (708) 298-3586",
+  "invoice_number": "122041188",
+  "customer_number": "0700417320",
+  "route": "2211",
+  "stop": 25,
+  "terms": "C.O.D.",
+  "license": "141504847",
+  "exp_date": "04/30/2026",
+  "chain": "09200014401",
+  "delivery_number": "0829203357",
+  "invoice_date": "06/24/2025",
+  "due_date": "07/24/2025",
+  "po_number": null,
+  "special_instructions": null,
+  "barcode": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000...
+2025-08-30 10:47:00 - invoice_parser - ERROR - Error parsing invoice: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 525)
+2025-08-30 10:47:00 - __main__ - ERROR - Error during invoice parsing: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 525)
+2025-08-30 10:47:00 - __main__ - ERROR - Fatal error: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 525)
+2025-08-30 10:49:02 - root - INFO - ============================================================
+2025-08-30 10:49:02 - root - INFO - Invoice Parser Application Started
+2025-08-30 10:49:02 - root - INFO - Log level: INFO
+2025-08-30 10:49:02 - root - INFO - Log file: invoice_parser.log
+2025-08-30 10:49:02 - root - INFO - Timestamp: 2025-08-30T10:49:02.598465
+2025-08-30 10:49:02 - root - INFO - ============================================================
+2025-08-30 10:49:03 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 10:49:03 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 10:49:03 - file_processor - INFO - Loading image: f2.png
+2025-08-30 10:49:03 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 10:49:04 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 10:49:04 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 10:51:26 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 10:51:26 - invoice_parser - ERROR - Failed to parse JSON response: Unterminated string starting at: line 18 column 14 (char 508)
+2025-08-30 10:51:26 - invoice_parser - ERROR - Raw content: {
+  "vendor_name": "Breakthru Beverage Illinois, LLC",
+  "vendor_address": "PO BOX 340, Berwyn, IL 60402",
+  "vendor_phone": "(708) 298-3000",
+  "invoice_number": "122041188",
+  "customer_number": "0700417320",
+  "route": "2211",
+  "stop": "25",
+  "terms": "C.O.D.",
+  "license": "141504847",
+  "exp_date": "04/30/2026",
+  "chain": "09200014401",
+  "delivery_number": "0829203457",
+  "invoice_date": "06/24/2025",
+  "due_date": "07/24/2025",
+  "po_number": null,
+  "special_instructions": null,
+  "barcode": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000...
+2025-08-30 10:51:26 - invoice_parser - ERROR - Error parsing invoice: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 508)
+2025-08-30 10:51:26 - __main__ - ERROR - Error during invoice parsing: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 508)
+2025-08-30 10:51:26 - __main__ - ERROR - Fatal error: Invalid JSON response from OpenAI: Unterminated string starting at: line 18 column 14 (char 508)
+2025-08-30 10:52:30 - root - INFO - ============================================================
+2025-08-30 10:52:30 - root - INFO - Invoice Parser Application Started
+2025-08-30 10:52:30 - root - INFO - Log level: INFO
+2025-08-30 10:52:30 - root - INFO - Log file: invoice_parser.log
+2025-08-30 10:52:30 - root - INFO - Timestamp: 2025-08-30T10:52:30.386524
+2025-08-30 10:52:30 - root - INFO - ============================================================
+2025-08-30 10:52:31 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 10:52:31 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 10:52:31 - file_processor - INFO - Loading image: f2.png
+2025-08-30 10:52:31 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 10:52:31 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 10:52:31 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 10:53:22 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 10:53:22 - invoice_parser - ERROR - Failed to parse JSON response: Expecting ',' delimiter: line 311 column 31 (char 7024)
+2025-08-30 10:53:22 - invoice_parser - ERROR - Raw content: {
+  "vendor_name": "Breakthru Beverage Illinois, LLC",
+  "vendor_address": "PO BOX 340, Berwyn, IL 60402",
+  "vendor_phone": "(708) 298-3000",
+  "invoice_number": "122041188",
+  "customer_number": "0700417320",
+  "route": "2211",
+  "stop": "25",
+  "terms": "C.O.D.",
+  "license": "141504847",
+  "exp_date": "04/30/2026",
+  "chain": "09200014401",
+  "delivery_number": "0829203457",
+  "invoice_date": "06/24/2025",
+  "due_date": "07/24/2025",
+  "po_number": null,
+  "special_instructions": null,
+  "barcode": "00000000000000000000",
+  "total_bottles": 48,
+  "total_liquor_gallons": 0,
+  "total_beer_gallons": 0,
+  "gross_total": 1234.99,
+  "total_discount": 0,
+  "net_amount": 1234.99,
+  "items": [
+    {
+      "Case": 4,
+      "Btles": 100,
+      "Item": "CROWN ROYAL 80",
+      "Size": null,
+      "BPC": "8700009760",
+      "Description": null,
+      "cs_price": 222.76,
+      "cs_disc": 0,
+      "cs_net": 222.76,
+      "cnty_tax": 0,
+      "city_tax": 0,
+      "ext_w_o_tax": 222.76,
+      "slp":...
+2025-08-30 10:53:22 - invoice_parser - ERROR - Error parsing invoice: Invalid JSON response from OpenAI: Expecting ',' delimiter: line 311 column 31 (char 7024)
+2025-08-30 10:53:22 - __main__ - ERROR - Error during invoice parsing: Invalid JSON response from OpenAI: Expecting ',' delimiter: line 311 column 31 (char 7024)
+2025-08-30 10:53:22 - __main__ - ERROR - Fatal error: Invalid JSON response from OpenAI: Expecting ',' delimiter: line 311 column 31 (char 7024)
+2025-08-30 10:55:31 - root - INFO - ============================================================
+2025-08-30 10:55:31 - root - INFO - Invoice Parser Application Started
+2025-08-30 10:55:31 - root - INFO - Log level: INFO
+2025-08-30 10:55:31 - root - INFO - Log file: invoice_parser.log
+2025-08-30 10:55:31 - root - INFO - Timestamp: 2025-08-30T10:55:31.119562
+2025-08-30 10:55:31 - root - INFO - ============================================================
+2025-08-30 10:55:31 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 10:55:31 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 10:55:31 - file_processor - INFO - Loading image: f2.png
+2025-08-30 10:55:32 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 10:55:32 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 10:55:32 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 10:56:26 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 10:56:26 - invoice_parser - ERROR - Failed to parse JSON response: Expecting ',' delimiter: line 311 column 38 (char 7073)
+2025-08-30 10:56:26 - invoice_parser - ERROR - Raw content: {
+  "vendor_name": "Breakthru Beverage Illinois, LLC",
+  "vendor_address": "PO BOX 340, Berwyn, IL 60402",
+  "vendor_phone": "(708) 298-3000",
+  "invoice_number": "122041188",
+  "customer_number": "0700417320",
+  "route": "2211",
+  "stop": "25",
+  "terms": "C.O.D.",
+  "license": "141504847",
+  "exp_date": "04/30/2026",
+  "chain": "09200014401",
+  "delivery_number": "0829203457",
+  "invoice_date": "06/24/2025",
+  "due_date": "07/24/2025",
+  "po_number": null,
+  "special_instructions": null,
+  "barcode": "00000000000000000000",
+  "total_bottles": 48,
+  "total_liquor_gallons": 0,
+  "total_beer_gallons": 0,
+  "gross_total": 0,
+  "total_discount": 0,
+  "net_amount": 0,
+  "items": [
+    {
+      "Case": 4,
+      "Btles": 100,
+      "Item": "CROWN ROYAL 80",
+      "Size": null,
+      "BPC": "8700009760",
+      "Description": null,
+      "cs_price": 322.76,
+      "cs_disc": 0,
+      "cs_net": 322.76,
+      "cnty_tax": 0,
+      "city_tax": 0,
+      "ext_w_o_tax": 0,
+      "slp": "808206373",
+   ...
+2025-08-30 10:56:26 - invoice_parser - ERROR - Error parsing invoice: Invalid JSON response from OpenAI: Expecting ',' delimiter: line 311 column 38 (char 7073)
+2025-08-30 10:56:26 - __main__ - ERROR - Error during invoice parsing: Invalid JSON response from OpenAI: Expecting ',' delimiter: line 311 column 38 (char 7073)
+2025-08-30 10:56:26 - __main__ - ERROR - Fatal error: Invalid JSON response from OpenAI: Expecting ',' delimiter: line 311 column 38 (char 7073)
+2025-08-30 10:57:36 - root - INFO - ============================================================
+2025-08-30 10:57:36 - root - INFO - Invoice Parser Application Started
+2025-08-30 10:57:36 - root - INFO - Log level: INFO
+2025-08-30 10:57:36 - root - INFO - Log file: invoice_parser.log
+2025-08-30 10:57:36 - root - INFO - Timestamp: 2025-08-30T10:57:36.631799
+2025-08-30 10:57:36 - root - INFO - ============================================================
+2025-08-30 10:57:37 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 10:57:37 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 10:57:37 - file_processor - INFO - Loading image: f2.png
+2025-08-30 10:57:38 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 10:57:38 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 10:57:38 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 10:58:15 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 10:58:15 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 10:58:15 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 10:58:15 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_105815.json
+2025-08-30 11:10:48 - root - INFO - ============================================================
+2025-08-30 11:10:48 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:10:48 - root - INFO - Log level: INFO
+2025-08-30 11:10:48 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:10:48 - root - INFO - Timestamp: 2025-08-30T11:10:48.011076
+2025-08-30 11:10:48 - root - INFO - ============================================================
+2025-08-30 11:10:48 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:10:48 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:10:48 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:10:48 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:10:48 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:10:48 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:11:25 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:11:25 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:11:25 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:11:25 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_111125.json
+2025-08-30 11:13:17 - root - INFO - ============================================================
+2025-08-30 11:13:17 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:13:18 - root - INFO - Log level: INFO
+2025-08-30 11:13:18 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:13:18 - root - INFO - Timestamp: 2025-08-30T11:13:18.007853
+2025-08-30 11:13:18 - root - INFO - ============================================================
+2025-08-30 11:13:18 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:13:18 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:13:18 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:13:18 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:13:18 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:13:18 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:14:01 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:14:01 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:14:01 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:14:01 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_111401.json
+2025-08-30 11:36:33 - root - INFO - ============================================================
+2025-08-30 11:36:33 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:36:33 - root - INFO - Log level: INFO
+2025-08-30 11:36:33 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:36:33 - root - INFO - Timestamp: 2025-08-30T11:36:33.726634
+2025-08-30 11:36:33 - root - INFO - ============================================================
+2025-08-30 11:36:33 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-30 11:36:41 - root - INFO - ============================================================
+2025-08-30 11:36:41 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:36:41 - root - INFO - Log level: INFO
+2025-08-30 11:36:41 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:36:41 - root - INFO - Timestamp: 2025-08-30T11:36:41.460488
+2025-08-30 11:36:41 - root - INFO - ============================================================
+2025-08-30 11:36:41 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-30 11:37:12 - root - INFO - ============================================================
+2025-08-30 11:37:12 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:37:12 - root - INFO - Log level: INFO
+2025-08-30 11:37:12 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:37:12 - root - INFO - Timestamp: 2025-08-30T11:37:12.762979
+2025-08-30 11:37:12 - root - INFO - ============================================================
+2025-08-30 11:37:12 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-30 11:40:22 - root - INFO - ============================================================
+2025-08-30 11:40:22 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:40:22 - root - INFO - Log level: INFO
+2025-08-30 11:40:22 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:40:22 - root - INFO - Timestamp: 2025-08-30T11:40:22.780466
+2025-08-30 11:40:22 - root - INFO - ============================================================
+2025-08-30 11:40:22 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:40:22 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:40:22 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:40:22 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:40:22 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:40:23 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:41:00 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:41:00 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:41:00 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:41:00 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_114100.json
+2025-08-30 11:41:14 - root - INFO - ============================================================
+2025-08-30 11:41:14 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:41:14 - root - INFO - Log level: INFO
+2025-08-30 11:41:14 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:41:14 - root - INFO - Timestamp: 2025-08-30T11:41:14.585113
+2025-08-30 11:41:14 - root - INFO - ============================================================
+2025-08-30 11:41:14 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:41:14 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:41:14 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:41:14 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:41:14 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:41:14 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:41:58 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:41:58 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:41:58 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:41:58 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_114158.json
+2025-08-30 11:41:58 - __main__ - ERROR - Error exporting to Excel: name 'datetime' is not defined
+2025-08-30 11:41:58 - __main__ - ERROR - Fatal error: name 'datetime' is not defined
+2025-08-30 11:42:13 - root - INFO - ============================================================
+2025-08-30 11:42:13 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:42:13 - root - INFO - Log level: INFO
+2025-08-30 11:42:13 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:42:13 - root - INFO - Timestamp: 2025-08-30T11:42:13.023915
+2025-08-30 11:42:13 - root - INFO - ============================================================
+2025-08-30 11:42:13 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:42:13 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:42:13 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:42:13 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:42:13 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:42:13 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:42:50 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:42:50 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:42:50 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:42:50 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_114250.json
+2025-08-30 11:42:50 - excel_exporter - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:42:50 - __main__ - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:42:50 - __main__ - ERROR - Fatal error: 'NoneType' object has no attribute 'get'
+2025-08-30 11:43:11 - root - INFO - ============================================================
+2025-08-30 11:43:11 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:43:11 - root - INFO - Log level: INFO
+2025-08-30 11:43:11 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:43:11 - root - INFO - Timestamp: 2025-08-30T11:43:11.612769
+2025-08-30 11:43:11 - root - INFO - ============================================================
+2025-08-30 11:43:11 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:43:11 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:43:11 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:43:11 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:43:11 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:43:11 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:43:59 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:43:59 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:43:59 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:43:59 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_114359.json
+2025-08-30 11:43:59 - excel_exporter - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:43:59 - __main__ - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:43:59 - __main__ - ERROR - Fatal error: 'NoneType' object has no attribute 'get'
+2025-08-30 11:44:55 - root - INFO - ============================================================
+2025-08-30 11:44:55 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:44:55 - root - INFO - Log level: INFO
+2025-08-30 11:44:55 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:44:55 - root - INFO - Timestamp: 2025-08-30T11:44:55.688728
+2025-08-30 11:44:55 - root - INFO - ============================================================
+2025-08-30 11:44:55 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:44:55 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:44:55 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:44:55 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:44:55 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:44:55 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:45:34 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:45:34 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:45:34 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:45:34 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_114534.json
+2025-08-30 11:45:34 - excel_exporter - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:45:34 - __main__ - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:45:34 - __main__ - ERROR - Fatal error: 'NoneType' object has no attribute 'get'
+2025-08-30 11:45:55 - root - INFO - ============================================================
+2025-08-30 11:45:55 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:45:55 - root - INFO - Log level: INFO
+2025-08-30 11:45:55 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:45:55 - root - INFO - Timestamp: 2025-08-30T11:45:55.848136
+2025-08-30 11:45:55 - root - INFO - ============================================================
+2025-08-30 11:45:55 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:45:55 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:45:55 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:45:55 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:45:55 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:45:56 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:46:38 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:46:38 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:46:38 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:46:38 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_114638.json
+2025-08-30 11:46:38 - excel_exporter - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:46:38 - __main__ - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:46:38 - __main__ - ERROR - Fatal error: 'NoneType' object has no attribute 'get'
+2025-08-30 11:47:00 - root - INFO - ============================================================
+2025-08-30 11:47:00 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:47:00 - root - INFO - Log level: INFO
+2025-08-30 11:47:00 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:47:00 - root - INFO - Timestamp: 2025-08-30T11:47:00.307622
+2025-08-30 11:47:00 - root - INFO - ============================================================
+2025-08-30 11:47:00 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:47:00 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:47:00 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:47:00 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:47:00 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:47:00 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:49:44 - root - INFO - ============================================================
+2025-08-30 11:49:44 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:49:44 - root - INFO - Log level: INFO
+2025-08-30 11:49:44 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:49:44 - root - INFO - Timestamp: 2025-08-30T11:49:44.327614
+2025-08-30 11:49:44 - root - INFO - ============================================================
+2025-08-30 11:49:44 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:49:44 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:49:44 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:49:44 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:49:44 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:49:44 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:50:27 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:50:27 - validators - ERROR - Validation error: could not convert string to float: 'None'
+2025-08-30 11:50:27 - invoice_parser - ERROR - Error parsing invoice: could not convert string to float: 'None'
+2025-08-30 11:50:27 - __main__ - ERROR - Error during invoice parsing: could not convert string to float: 'None'
+2025-08-30 11:50:27 - __main__ - ERROR - Fatal error: could not convert string to float: 'None'
+2025-08-30 11:51:10 - root - INFO - ============================================================
+2025-08-30 11:51:10 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:51:10 - root - INFO - Log level: INFO
+2025-08-30 11:51:10 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:51:10 - root - INFO - Timestamp: 2025-08-30T11:51:10.356246
+2025-08-30 11:51:10 - root - INFO - ============================================================
+2025-08-30 11:51:10 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:51:10 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:51:10 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:51:10 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:51:10 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:51:10 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:51:51 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:51:51 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:51:51 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:51:51 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_115151.json
+2025-08-30 11:51:51 - excel_exporter - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:51:51 - excel_exporter - ERROR - Traceback: Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\excel_exporter.py", line 44, in export_invoice
+    self.logger.info(f"Starting Excel export for invoice: {invoice_data.get('invoice_number', 'Unknown')}")
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2025-08-30 11:51:51 - __main__ - ERROR - Error exporting to Excel: 'NoneType' object has no attribute 'get'
+2025-08-30 11:51:51 - __main__ - ERROR - Fatal error: 'NoneType' object has no attribute 'get'
+2025-08-30 11:52:22 - root - INFO - ============================================================
+2025-08-30 11:52:22 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:52:22 - root - INFO - Log level: INFO
+2025-08-30 11:52:22 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:52:22 - root - INFO - Timestamp: 2025-08-30T11:52:22.553160
+2025-08-30 11:52:22 - root - INFO - ============================================================
+2025-08-30 11:52:22 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 11:52:22 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:52:22 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:52:22 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:52:22 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:52:22 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:53:03 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:53:03 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:53:03 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:53:03 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_115303.json
+2025-08-30 11:53:03 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-08-30 11:53:03 - excel_exporter - INFO - Creating summary sheet...
+2025-08-30 11:53:03 - excel_exporter - INFO - Creating items sheet...
+2025-08-30 11:53:03 - excel_exporter - INFO - Creating vendor sheet...
+2025-08-30 11:53:03 - excel_exporter - INFO - Creating validation sheet...
+2025-08-30 11:53:04 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_breakthru_f2_20250830_115303.xlsx
+2025-08-30 11:53:04 - __main__ - INFO - Excel file exported successfully: output\invoice_breakthru_f2_20250830_115303.xlsx
+2025-08-30 11:54:37 - root - INFO - ============================================================
+2025-08-30 11:54:37 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:54:37 - root - INFO - Log level: INFO
+2025-08-30 11:54:37 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:54:37 - root - INFO - Timestamp: 2025-08-30T11:54:37.374162
+2025-08-30 11:54:37 - root - INFO - ============================================================
+2025-08-30 11:54:37 - __main__ - ERROR - Fatal error: Vendor is required when using --batch
+2025-08-30 11:54:46 - root - INFO - ============================================================
+2025-08-30 11:54:46 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:54:46 - root - INFO - Log level: INFO
+2025-08-30 11:54:46 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:54:46 - root - INFO - Timestamp: 2025-08-30T11:54:46.142237
+2025-08-30 11:54:46 - root - INFO - ============================================================
+2025-08-30 11:54:46 - __main__ - ERROR - Fatal error: Vendor is required when using --batch
+2025-08-30 11:55:05 - root - INFO - ============================================================
+2025-08-30 11:55:05 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:55:05 - root - INFO - Log level: INFO
+2025-08-30 11:55:05 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:55:05 - root - INFO - Timestamp: 2025-08-30T11:55:05.670133
+2025-08-30 11:55:05 - root - INFO - ============================================================
+2025-08-30 11:55:05 - __main__ - ERROR - Fatal error: Vendor is required when using --batch
+2025-08-30 11:55:13 - root - INFO - ============================================================
+2025-08-30 11:55:13 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:55:13 - root - INFO - Log level: INFO
+2025-08-30 11:55:13 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:55:13 - root - INFO - Timestamp: 2025-08-30T11:55:13.444986
+2025-08-30 11:55:13 - root - INFO - ============================================================
+2025-08-30 11:55:13 - __main__ - ERROR - Fatal error: Vendor is required when using --batch
+2025-08-30 11:55:30 - root - INFO - ============================================================
+2025-08-30 11:55:30 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:55:30 - root - INFO - Log level: INFO
+2025-08-30 11:55:30 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:55:30 - root - INFO - Timestamp: 2025-08-30T11:55:30.574594
+2025-08-30 11:55:30 - root - INFO - ============================================================
+2025-08-30 11:55:30 - __main__ - ERROR - Fatal error: Vendor is required when using --batch
+2025-08-30 11:55:49 - root - INFO - ============================================================
+2025-08-30 11:55:49 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:55:49 - root - INFO - Log level: INFO
+2025-08-30 11:55:49 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:55:49 - root - INFO - Timestamp: 2025-08-30T11:55:49.481497
+2025-08-30 11:55:49 - root - INFO - ============================================================
+2025-08-30 11:55:49 - __main__ - INFO - Batch mode: args.batch=['f2.png', 'breakthru'], args.vendor=None
+2025-08-30 11:55:49 - __main__ - ERROR - Fatal error: Vendor is required when using --batch
+2025-08-30 11:56:10 - root - INFO - ============================================================
+2025-08-30 11:56:10 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:56:10 - root - INFO - Log level: INFO
+2025-08-30 11:56:10 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:56:10 - root - INFO - Timestamp: 2025-08-30T11:56:10.183250
+2025-08-30 11:56:10 - root - INFO - ============================================================
+2025-08-30 11:56:10 - __main__ - INFO - Batch mode: args.batch=['f2.png', 'breakthru'], args.vendor=None
+2025-08-30 11:56:10 - __main__ - INFO - Processing batch of 1 files for vendor: breakthru
+2025-08-30 11:56:10 - __main__ - INFO - Processing: f2.png
+2025-08-30 11:56:10 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:56:10 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:56:10 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:56:10 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:56:10 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:56:43 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:56:43 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:56:43 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:56:43 - excel_exporter - ERROR - Error exporting batch to Excel: 'NoneType' object has no attribute 'upper'
+2025-08-30 11:56:43 - __main__ - ERROR - Error exporting batch to Excel: 'NoneType' object has no attribute 'upper'
+2025-08-30 11:56:43 - __main__ - ERROR - Fatal error: 'NoneType' object has no attribute 'upper'
+2025-08-30 11:56:59 - root - INFO - ============================================================
+2025-08-30 11:56:59 - root - INFO - Invoice Parser Application Started
+2025-08-30 11:56:59 - root - INFO - Log level: INFO
+2025-08-30 11:56:59 - root - INFO - Log file: invoice_parser.log
+2025-08-30 11:56:59 - root - INFO - Timestamp: 2025-08-30T11:56:59.373405
+2025-08-30 11:56:59 - root - INFO - ============================================================
+2025-08-30 11:56:59 - __main__ - INFO - Batch mode: args.batch=['f2.png', 'breakthru'], args.vendor=None
+2025-08-30 11:56:59 - __main__ - INFO - Processing batch of 1 files for vendor: breakthru
+2025-08-30 11:56:59 - __main__ - INFO - Processing: f2.png
+2025-08-30 11:56:59 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 11:56:59 - file_processor - INFO - Loading image: f2.png
+2025-08-30 11:56:59 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 11:56:59 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 11:56:59 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 11:57:33 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 11:57:33 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 11:57:33 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 11:57:34 - excel_exporter - INFO - Batch Excel file exported successfully to: output\batch_breakthru_20250830_115734.xlsx
+2025-08-30 11:57:34 - __main__ - INFO - Batch Excel file exported successfully: output\batch_breakthru_20250830_115734.xlsx
+2025-08-30 12:01:31 - root - INFO - ============================================================
+2025-08-30 12:01:31 - root - INFO - Invoice Parser Application Started
+2025-08-30 12:01:31 - root - INFO - Log level: INFO
+2025-08-30 12:01:31 - root - INFO - Log file: invoice_parser.log
+2025-08-30 12:01:31 - root - INFO - Timestamp: 2025-08-30T12:01:31.847816
+2025-08-30 12:01:31 - root - INFO - ============================================================
+2025-08-30 12:01:31 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-30 12:01:31 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-30 12:01:31 - file_processor - INFO - Loading image: f2.png
+2025-08-30 12:01:31 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-30 12:01:31 - invoice_parser - INFO - Processed file into 1 images
+2025-08-30 12:01:32 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-30 12:02:12 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-30 12:02:12 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-30 12:02:12 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-30 12:02:12 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250830_120212.json
+2025-08-30 12:02:12 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-08-30 12:02:12 - excel_exporter - INFO - Creating summary sheet...
+2025-08-30 12:02:12 - excel_exporter - INFO - Creating items sheet...
+2025-08-30 12:02:12 - excel_exporter - INFO - Creating vendor sheet...
+2025-08-30 12:02:12 - excel_exporter - INFO - Creating validation sheet...
+2025-08-30 12:02:13 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_breakthru_f2_20250830_120212.xlsx
+2025-08-30 12:02:13 - __main__ - INFO - Excel file exported successfully: output\invoice_breakthru_f2_20250830_120212.xlsx
+2025-08-31 22:43:47 - root - INFO - ============================================================
+2025-08-31 22:43:47 - root - INFO - Invoice Parser Application Started
+2025-08-31 22:43:47 - root - INFO - Log level: INFO
+2025-08-31 22:43:47 - root - INFO - Log file: invoice_parser.log
+2025-08-31 22:43:47 - root - INFO - Timestamp: 2025-08-31T22:43:47.207181
+2025-08-31 22:43:47 - root - INFO - ============================================================
+2025-08-31 22:43:47 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-08-31 22:43:47 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-08-31 22:43:47 - file_processor - INFO - Loading image: f1.png
+2025-08-31 22:43:47 - file_processor - INFO - Successfully loaded image: f1.png
+2025-08-31 22:43:47 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 22:43:47 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 22:44:08 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-31 22:44:08 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account', 'totals_mismatch']
+2025-08-31 22:44:08 - invoice_parser - INFO - Successfully parsed invoice with 7 items
+2025-08-31 22:44:08 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_lakeshore_f1_20250831_224408.json
+2025-08-31 22:44:08 - excel_exporter - INFO - Starting Excel export for invoice: 125504
+2025-08-31 22:44:08 - excel_exporter - INFO - Creating summary sheet...
+2025-08-31 22:44:08 - excel_exporter - INFO - Creating items sheet...
+2025-08-31 22:44:08 - excel_exporter - INFO - Creating vendor sheet...
+2025-08-31 22:44:08 - excel_exporter - INFO - Creating validation sheet...
+2025-08-31 22:44:08 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_lakeshore_f1_20250831_224408.xlsx
+2025-08-31 22:44:08 - __main__ - INFO - Excel file exported successfully: output\invoice_lakeshore_f1_20250831_224408.xlsx
+2025-08-31 22:48:10 - root - INFO - ============================================================
+2025-08-31 22:48:10 - root - INFO - Invoice Parser Application Started
+2025-08-31 22:48:10 - root - INFO - Log level: INFO
+2025-08-31 22:48:10 - root - INFO - Log file: invoice_parser.log
+2025-08-31 22:48:10 - root - INFO - Timestamp: 2025-08-31T22:48:10.403095
+2025-08-31 22:48:10 - root - INFO - ============================================================
+2025-08-31 22:48:10 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-08-31 22:48:10 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-08-31 22:48:10 - file_processor - INFO - Loading image: f2.png
+2025-08-31 22:48:10 - file_processor - INFO - Successfully loaded image: f2.png
+2025-08-31 22:48:10 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 22:48:10 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 22:48:45 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-31 22:48:45 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-08-31 22:48:45 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-08-31 22:48:45 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250831_224845.json
+2025-08-31 22:48:45 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-08-31 22:48:45 - excel_exporter - INFO - Creating summary sheet...
+2025-08-31 22:48:45 - excel_exporter - INFO - Creating items sheet...
+2025-08-31 22:48:45 - excel_exporter - INFO - Creating vendor sheet...
+2025-08-31 22:48:45 - excel_exporter - INFO - Creating validation sheet...
+2025-08-31 22:48:45 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_breakthru_f2_20250831_224845.xlsx
+2025-08-31 22:48:45 - __main__ - INFO - Excel file exported successfully: output\invoice_breakthru_f2_20250831_224845.xlsx
+2025-08-31 22:49:29 - root - INFO - ============================================================
+2025-08-31 22:49:29 - root - INFO - Invoice Parser Application Started
+2025-08-31 22:49:29 - root - INFO - Log level: INFO
+2025-08-31 22:49:29 - root - INFO - Log file: invoice_parser.log
+2025-08-31 22:49:29 - root - INFO - Timestamp: 2025-08-31T22:49:29.457616
+2025-08-31 22:49:29 - root - INFO - ============================================================
+2025-08-31 22:49:29 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 22:49:29 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 22:49:29 - file_processor - INFO - Loading image: f3.png
+2025-08-31 22:49:29 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 22:49:29 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 22:49:30 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 22:49:58 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-31 22:49:58 - validators - ERROR - Validation error: '<' not supported between instances of 'str' and 'int'
+2025-08-31 22:49:58 - invoice_parser - ERROR - Error parsing invoice: '<' not supported between instances of 'str' and 'int'
+2025-08-31 22:49:58 - __main__ - ERROR - Error during invoice parsing: '<' not supported between instances of 'str' and 'int'
+2025-08-31 22:49:58 - __main__ - ERROR - Fatal error: '<' not supported between instances of 'str' and 'int'
+2025-08-31 22:51:00 - root - INFO - ============================================================
+2025-08-31 22:51:00 - root - INFO - Invoice Parser Application Started
+2025-08-31 22:51:00 - root - INFO - Log level: INFO
+2025-08-31 22:51:00 - root - INFO - Log file: invoice_parser.log
+2025-08-31 22:51:00 - root - INFO - Timestamp: 2025-08-31T22:51:00.722206
+2025-08-31 22:51:00 - root - INFO - ============================================================
+2025-08-31 22:51:00 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 22:51:00 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 22:51:00 - file_processor - INFO - Loading image: f3.png
+2025-08-31 22:51:00 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 22:51:00 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 22:51:01 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 22:51:01 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019715F439E0>: Failed to resolve 'api.openai.com' ([Errno 11002] getaddrinfo failed)")': /v1/chat/completions
+2025-08-31 22:51:01 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019715F2D2E0>: Failed to resolve 'api.openai.com' ([Errno 11002] getaddrinfo failed)")': /v1/chat/completions
+2025-08-31 22:51:01 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019715F507D0>: Failed to resolve 'api.openai.com' ([Errno 11002] getaddrinfo failed)"))
+2025-08-31 22:51:01 - invoice_parser - ERROR - Error parsing invoice: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019715F507D0>: Failed to resolve 'api.openai.com' ([Errno 11002] getaddrinfo failed)"))
+2025-08-31 22:51:01 - __main__ - ERROR - Error during invoice parsing: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019715F507D0>: Failed to resolve 'api.openai.com' ([Errno 11002] getaddrinfo failed)"))
+2025-08-31 22:51:01 - __main__ - ERROR - Fatal error: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019715F507D0>: Failed to resolve 'api.openai.com' ([Errno 11002] getaddrinfo failed)"))
+2025-08-31 23:02:34 - root - INFO - ============================================================
+2025-08-31 23:02:34 - root - INFO - Invoice Parser Application Started
+2025-08-31 23:02:34 - root - INFO - Log level: INFO
+2025-08-31 23:02:34 - root - INFO - Log file: invoice_parser.log
+2025-08-31 23:02:34 - root - INFO - Timestamp: 2025-08-31T23:02:34.459641
+2025-08-31 23:02:34 - root - INFO - ============================================================
+2025-08-31 23:02:34 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 23:02:34 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 23:02:34 - file_processor - INFO - Loading image: f3.png
+2025-08-31 23:02:34 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 23:02:34 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 23:02:34 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 23:03:10 - openai_client - INFO - Successfully received response from OpenAI
+2025-08-31 23:03:10 - validators - ERROR - Validation error: '<' not supported between instances of 'str' and 'int'
+2025-08-31 23:03:10 - invoice_parser - ERROR - Error parsing invoice: '<' not supported between instances of 'str' and 'int'
+2025-08-31 23:03:10 - __main__ - ERROR - Error during invoice parsing: '<' not supported between instances of 'str' and 'int'
+2025-08-31 23:03:10 - __main__ - ERROR - Fatal error: '<' not supported between instances of 'str' and 'int'
+2025-08-31 23:05:00 - root - INFO - ============================================================
+2025-08-31 23:05:00 - root - INFO - Invoice Parser Application Started
+2025-08-31 23:05:00 - root - INFO - Log level: INFO
+2025-08-31 23:05:00 - root - INFO - Log file: invoice_parser.log
+2025-08-31 23:05:00 - root - INFO - Timestamp: 2025-08-31T23:05:00.948207
+2025-08-31 23:05:00 - root - INFO - ============================================================
+2025-08-31 23:05:00 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 23:05:00 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 23:05:00 - file_processor - INFO - Loading image: f3.png
+2025-08-31 23:05:01 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 23:05:01 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 23:05:01 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 23:05:01 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-31 23:05:01 - invoice_parser - ERROR - Error parsing invoice: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-31 23:05:01 - __main__ - ERROR - Error during invoice parsing: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-31 23:05:01 - __main__ - ERROR - Fatal error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-31 23:05:29 - root - INFO - ============================================================
+2025-08-31 23:05:29 - root - INFO - Invoice Parser Application Started
+2025-08-31 23:05:29 - root - INFO - Log level: INFO
+2025-08-31 23:05:29 - root - INFO - Log file: invoice_parser.log
+2025-08-31 23:05:29 - root - INFO - Timestamp: 2025-08-31T23:05:29.680320
+2025-08-31 23:05:29 - root - INFO - ============================================================
+2025-08-31 23:05:29 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 23:05:29 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 23:05:29 - file_processor - INFO - Loading image: f3.png
+2025-08-31 23:05:29 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 23:05:29 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 23:05:30 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 23:05:30 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:05:30 - invoice_parser - ERROR - Error parsing invoice: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:05:30 - __main__ - ERROR - Error during invoice parsing: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:05:30 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:05:49 - root - INFO - ============================================================
+2025-08-31 23:05:49 - root - INFO - Invoice Parser Application Started
+2025-08-31 23:05:49 - root - INFO - Log level: INFO
+2025-08-31 23:05:49 - root - INFO - Log file: invoice_parser.log
+2025-08-31 23:05:49 - root - INFO - Timestamp: 2025-08-31T23:05:49.593575
+2025-08-31 23:05:49 - root - INFO - ============================================================
+2025-08-31 23:05:49 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 23:05:49 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 23:05:49 - file_processor - INFO - Loading image: f3.png
+2025-08-31 23:05:49 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 23:05:49 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 23:05:50 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 23:05:50 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:05:50 - invoice_parser - ERROR - Error parsing invoice: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:05:50 - __main__ - ERROR - Error during invoice parsing: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:05:50 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:09:51 - root - INFO - ============================================================
+2025-08-31 23:09:51 - root - INFO - Invoice Parser Application Started
+2025-08-31 23:09:51 - root - INFO - Log level: INFO
+2025-08-31 23:09:51 - root - INFO - Log file: invoice_parser.log
+2025-08-31 23:09:51 - root - INFO - Timestamp: 2025-08-31T23:09:51.141607
+2025-08-31 23:09:51 - root - INFO - ============================================================
+2025-08-31 23:09:51 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 23:09:51 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 23:09:51 - file_processor - INFO - Loading image: f3.png
+2025-08-31 23:09:51 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 23:09:51 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 23:09:51 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 23:09:51 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:09:51 - invoice_parser - ERROR - Error parsing invoice: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:09:51 - __main__ - ERROR - Error during invoice parsing: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:09:51 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:17:46 - root - INFO - ============================================================
+2025-08-31 23:17:46 - root - INFO - Invoice Parser Application Started
+2025-08-31 23:17:46 - root - INFO - Log level: INFO
+2025-08-31 23:17:46 - root - INFO - Log file: invoice_parser.log
+2025-08-31 23:17:46 - root - INFO - Timestamp: 2025-08-31T23:17:46.716712
+2025-08-31 23:17:46 - root - INFO - ============================================================
+2025-08-31 23:17:46 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-08-31 23:17:46 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-08-31 23:17:46 - file_processor - INFO - Loading image: f3.png
+2025-08-31 23:17:46 - file_processor - INFO - Successfully loaded image: f3.png
+2025-08-31 23:17:46 - invoice_parser - INFO - Processed file into 1 images
+2025-08-31 23:17:47 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-08-31 23:17:47 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:17:47 - invoice_parser - ERROR - Error parsing invoice: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:17:47 - __main__ - ERROR - Error during invoice parsing: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-08-31 23:17:47 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:01:28 - root - INFO - ============================================================
+2025-09-01 00:01:28 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:01:28 - root - INFO - Log level: INFO
+2025-09-01 00:01:28 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:01:28 - root - INFO - Timestamp: 2025-09-01T00:01:28.700599
+2025-09-01 00:01:28 - root - INFO - ============================================================
+2025-09-01 00:01:28 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-09-01 00:01:28 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-09-01 00:01:28 - file_processor - INFO - Loading image: f3.png
+2025-09-01 00:01:28 - file_processor - INFO - Successfully loaded image: f3.png
+2025-09-01 00:01:28 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 00:01:29 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 00:01:29 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:01:29 - invoice_parser - ERROR - Error parsing invoice: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:01:29 - __main__ - ERROR - Error during invoice parsing: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:01:29 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:10:16 - root - INFO - ============================================================
+2025-09-01 00:10:16 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:10:16 - root - INFO - Log level: INFO
+2025-09-01 00:10:16 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:10:16 - root - INFO - Timestamp: 2025-09-01T00:10:16.169822
+2025-09-01 00:10:16 - root - INFO - ============================================================
+2025-09-01 00:10:16 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-09-01 00:10:16 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-09-01 00:10:16 - file_processor - INFO - Loading image: f3.png
+2025-09-01 00:10:16 - file_processor - INFO - Successfully loaded image: f3.png
+2025-09-01 00:10:16 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 00:10:16 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 00:10:16 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:10:16 - invoice_parser - ERROR - Error parsing invoice: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:10:16 - __main__ - ERROR - Error during invoice parsing: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:10:16 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:21:25 - root - INFO - ============================================================
+2025-09-01 00:21:26 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:21:26 - root - INFO - Log level: INFO
+2025-09-01 00:21:26 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:21:26 - root - INFO - Timestamp: 2025-09-01T00:21:26.005148
+2025-09-01 00:21:26 - root - INFO - ============================================================
+2025-09-01 00:21:26 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-09-01 00:21:26 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-09-01 00:21:26 - file_processor - INFO - Extracting text via OCR from image: f1.png
+2025-09-01 00:21:26 - file_processor - ERROR - Tesseract OCR not found. Please install Tesseract and ensure it's on PATH.
+2025-09-01 00:21:26 - invoice_parser - ERROR - Error parsing invoice: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:21:26 - __main__ - ERROR - Error during invoice parsing: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:21:26 - __main__ - ERROR - Fatal error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:25:03 - root - INFO - ============================================================
+2025-09-01 00:25:03 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:25:03 - root - INFO - Log level: INFO
+2025-09-01 00:25:03 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:25:03 - root - INFO - Timestamp: 2025-09-01T00:25:03.017218
+2025-09-01 00:25:03 - root - INFO - ============================================================
+2025-09-01 00:25:03 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-09-01 00:25:03 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-09-01 00:25:03 - file_processor - INFO - Extracting text via OCR from image: f1.png
+2025-09-01 00:25:03 - file_processor - ERROR - Tesseract OCR not found. Please install Tesseract and ensure it's on PATH.
+2025-09-01 00:25:03 - invoice_parser - ERROR - Error parsing invoice: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:25:03 - __main__ - ERROR - Error during invoice parsing: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:25:03 - __main__ - ERROR - Fatal error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:33:09 - root - INFO - ============================================================
+2025-09-01 00:33:09 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:33:09 - root - INFO - Log level: INFO
+2025-09-01 00:33:09 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:33:09 - root - INFO - Timestamp: 2025-09-01T00:33:09.687469
+2025-09-01 00:33:09 - root - INFO - ============================================================
+2025-09-01 00:33:09 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-09-01 00:33:09 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-09-01 00:33:09 - file_processor - INFO - Extracting text via OCR from image: f1.png
+2025-09-01 00:33:09 - file_processor - ERROR - Tesseract OCR not found. Please install Tesseract and ensure it's on PATH.
+2025-09-01 00:33:09 - invoice_parser - ERROR - Error parsing invoice: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:33:09 - __main__ - ERROR - Error during invoice parsing: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:33:09 - __main__ - ERROR - Fatal error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-09-01 00:34:58 - root - INFO - ============================================================
+2025-09-01 00:34:58 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:34:58 - root - INFO - Log level: INFO
+2025-09-01 00:34:58 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:34:58 - root - INFO - Timestamp: 2025-09-01T00:34:58.442999
+2025-09-01 00:34:58 - root - INFO - ============================================================
+2025-09-01 00:34:58 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-09-01 00:34:58 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-09-01 00:34:58 - file_processor - INFO - Loading image: f1.png
+2025-09-01 00:34:58 - file_processor - INFO - Successfully loaded image: f1.png
+2025-09-01 00:34:58 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 00:34:58 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 00:34:58 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-09-01 00:34:58 - invoice_parser - ERROR - Error parsing invoice: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-09-01 00:34:58 - __main__ - ERROR - Error during invoice parsing: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-09-01 00:34:58 - __main__ - ERROR - Fatal error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-09-01 00:39:49 - root - INFO - ============================================================
+2025-09-01 00:39:49 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:39:49 - root - INFO - Log level: INFO
+2025-09-01 00:39:49 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:39:49 - root - INFO - Timestamp: 2025-09-01T00:39:49.694412
+2025-09-01 00:39:49 - root - INFO - ============================================================
+2025-09-01 00:39:49 - __main__ - ERROR - Fatal error: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-01 00:40:17 - root - INFO - ============================================================
+2025-09-01 00:40:17 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:40:17 - root - INFO - Log level: INFO
+2025-09-01 00:40:17 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:40:17 - root - INFO - Timestamp: 2025-09-01T00:40:17.241901
+2025-09-01 00:40:17 - root - INFO - ============================================================
+2025-09-01 00:40:18 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-09-01 00:40:18 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-09-01 00:40:18 - file_processor - INFO - Loading image: f1.png
+2025-09-01 00:40:18 - file_processor - INFO - Successfully loaded image: f1.png
+2025-09-01 00:40:18 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 00:40:18 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 00:40:39 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 00:40:39 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account', 'totals_mismatch']
+2025-09-01 00:40:39 - invoice_parser - INFO - Successfully parsed invoice with 7 items
+2025-09-01 00:40:39 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_lakeshore_f1_20250901_004039.json
+2025-09-01 00:40:39 - excel_exporter - INFO - Starting Excel export for invoice: 125504
+2025-09-01 00:40:39 - excel_exporter - INFO - Creating summary sheet...
+2025-09-01 00:40:39 - excel_exporter - INFO - Creating items sheet...
+2025-09-01 00:40:39 - excel_exporter - INFO - Creating vendor sheet...
+2025-09-01 00:40:39 - excel_exporter - INFO - Creating validation sheet...
+2025-09-01 00:40:39 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_lakeshore_f1_20250901_004039.xlsx
+2025-09-01 00:40:39 - __main__ - INFO - Excel file exported successfully: output\invoice_lakeshore_f1_20250901_004039.xlsx
+2025-09-01 00:41:13 - root - INFO - ============================================================
+2025-09-01 00:41:13 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:41:13 - root - INFO - Log level: INFO
+2025-09-01 00:41:13 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:41:13 - root - INFO - Timestamp: 2025-09-01T00:41:13.820987
+2025-09-01 00:41:13 - root - INFO - ============================================================
+2025-09-01 00:41:14 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-09-01 00:41:15 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-09-01 00:41:15 - file_processor - INFO - Loading image: f2.png
+2025-09-01 00:41:15 - file_processor - INFO - Successfully loaded image: f2.png
+2025-09-01 00:41:15 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 00:41:15 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 00:41:51 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 00:41:51 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-09-01 00:41:51 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-09-01 00:41:51 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250901_004151.json
+2025-09-01 00:41:51 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-09-01 00:41:51 - excel_exporter - INFO - Creating summary sheet...
+2025-09-01 00:41:51 - excel_exporter - INFO - Creating items sheet...
+2025-09-01 00:41:51 - excel_exporter - INFO - Creating vendor sheet...
+2025-09-01 00:41:51 - excel_exporter - INFO - Creating validation sheet...
+2025-09-01 00:41:51 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_breakthru_f2_20250901_004151.xlsx
+2025-09-01 00:41:51 - __main__ - INFO - Excel file exported successfully: output\invoice_breakthru_f2_20250901_004151.xlsx
+2025-09-01 00:42:46 - root - INFO - ============================================================
+2025-09-01 00:42:46 - root - INFO - Invoice Parser Application Started
+2025-09-01 00:42:46 - root - INFO - Log level: INFO
+2025-09-01 00:42:46 - root - INFO - Log file: invoice_parser.log
+2025-09-01 00:42:46 - root - INFO - Timestamp: 2025-09-01T00:42:46.437202
+2025-09-01 00:42:46 - root - INFO - ============================================================
+2025-09-01 00:42:47 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-09-01 00:42:47 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-09-01 00:42:47 - file_processor - INFO - Loading image: f3.png
+2025-09-01 00:42:47 - file_processor - INFO - Successfully loaded image: f3.png
+2025-09-01 00:42:47 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 00:42:47 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 00:43:12 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 00:43:12 - validators - ERROR - Validation error: '<' not supported between instances of 'str' and 'int'
+2025-09-01 00:43:12 - invoice_parser - ERROR - Error parsing invoice: '<' not supported between instances of 'str' and 'int'
+2025-09-01 00:43:12 - __main__ - ERROR - Error during invoice parsing: '<' not supported between instances of 'str' and 'int'
+2025-09-01 00:43:12 - __main__ - ERROR - Fatal error: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:07:46 - root - INFO - ============================================================
+2025-09-01 01:07:46 - root - INFO - Invoice Parser Application Started
+2025-09-01 01:07:46 - root - INFO - Log level: INFO
+2025-09-01 01:07:46 - root - INFO - Log file: invoice_parser.log
+2025-09-01 01:07:46 - root - INFO - Timestamp: 2025-09-01T01:07:46.223283
+2025-09-01 01:07:46 - root - INFO - ============================================================
+2025-09-01 01:07:46 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-09-01 01:07:46 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-09-01 01:07:46 - file_processor - INFO - Loading image: f3.png
+2025-09-01 01:07:46 - file_processor - INFO - Successfully loaded image: f3.png
+2025-09-01 01:07:46 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 01:07:47 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 01:08:12 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 01:08:12 - validators - ERROR - Validation error: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:08:12 - invoice_parser - ERROR - Error parsing invoice: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:08:12 - __main__ - ERROR - Error during invoice parsing: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:08:12 - __main__ - ERROR - Fatal error: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:11:27 - root - INFO - ============================================================
+2025-09-01 01:11:27 - root - INFO - Invoice Parser Application Started
+2025-09-01 01:11:27 - root - INFO - Log level: INFO
+2025-09-01 01:11:27 - root - INFO - Log file: invoice_parser.log
+2025-09-01 01:11:27 - root - INFO - Timestamp: 2025-09-01T01:11:27.788420
+2025-09-01 01:11:27 - root - INFO - ============================================================
+2025-09-01 01:11:28 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-09-01 01:11:28 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-09-01 01:11:28 - file_processor - INFO - Loading image: f3.png
+2025-09-01 01:11:28 - file_processor - INFO - Successfully loaded image: f3.png
+2025-09-01 01:11:28 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 01:11:28 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 01:11:53 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 01:11:53 - validators - ERROR - Validation error: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:11:53 - invoice_parser - ERROR - Error parsing invoice: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:11:53 - __main__ - ERROR - Error during invoice parsing: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:11:53 - __main__ - ERROR - Fatal error: '<' not supported between instances of 'str' and 'int'
+2025-09-01 01:34:47 - root - INFO - ============================================================
+2025-09-01 01:34:47 - root - INFO - Invoice Parser Application Started
+2025-09-01 01:34:47 - root - INFO - Log level: INFO
+2025-09-01 01:34:47 - root - INFO - Log file: invoice_parser.log
+2025-09-01 01:34:47 - root - INFO - Timestamp: 2025-09-01T01:34:47.979632
+2025-09-01 01:34:47 - root - INFO - ============================================================
+2025-09-01 01:34:48 - __main__ - INFO - Starting invoice parsing for southern_glazers from f3.png
+2025-09-01 01:34:48 - invoice_parser - INFO - Processing f3.png for vendor southern_glazers
+2025-09-01 01:34:48 - file_processor - INFO - Loading image: f3.png
+2025-09-01 01:34:48 - file_processor - INFO - Successfully loaded image: f3.png
+2025-09-01 01:34:48 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 01:34:49 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 01:35:10 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 01:35:10 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account', 'invalid_invoice_total', 'invalid_numeric_field: gross_total']
+2025-09-01 01:35:10 - invoice_parser - INFO - Successfully parsed invoice with 6 items
+2025-09-01 01:35:10 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_southern_glazers_f3_20250901_013510.json
+2025-09-01 01:35:10 - excel_exporter - INFO - Starting Excel export for invoice: 1858160
+2025-09-01 01:35:10 - excel_exporter - INFO - Creating summary sheet...
+2025-09-01 01:35:10 - excel_exporter - INFO - Creating items sheet...
+2025-09-01 01:35:10 - excel_exporter - INFO - Creating vendor sheet...
+2025-09-01 01:35:10 - excel_exporter - INFO - Creating validation sheet...
+2025-09-01 01:35:10 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_southern_glazers_f3_20250901_013510.xlsx
+2025-09-01 01:35:10 - __main__ - INFO - Excel file exported successfully: output\invoice_southern_glazers_f3_20250901_013510.xlsx
+2025-09-01 01:43:17 - root - INFO - ============================================================
+2025-09-01 01:43:17 - root - INFO - Invoice Parser Application Started
+2025-09-01 01:43:17 - root - INFO - Log level: INFO
+2025-09-01 01:43:17 - root - INFO - Log file: invoice_parser.log
+2025-09-01 01:43:17 - root - INFO - Timestamp: 2025-09-01T01:43:17.769293
+2025-09-01 01:43:17 - root - INFO - ============================================================
+2025-09-01 01:43:18 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-09-01 01:43:18 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-09-01 01:43:18 - file_processor - INFO - Loading image: f1.png
+2025-09-01 01:43:18 - file_processor - INFO - Successfully loaded image: f1.png
+2025-09-01 01:43:18 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 01:43:18 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 01:43:39 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 01:43:39 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account', 'totals_mismatch']
+2025-09-01 01:43:39 - invoice_parser - INFO - Successfully parsed invoice with 7 items
+2025-09-01 01:43:39 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_lakeshore_f1_20250901_014339.json
+2025-09-01 01:43:39 - excel_exporter - INFO - Starting Excel export for invoice: 125504
+2025-09-01 01:43:39 - excel_exporter - INFO - Creating summary sheet...
+2025-09-01 01:43:39 - excel_exporter - INFO - Creating items sheet...
+2025-09-01 01:43:39 - excel_exporter - INFO - Creating vendor sheet...
+2025-09-01 01:43:39 - excel_exporter - INFO - Creating validation sheet...
+2025-09-01 01:43:39 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_lakeshore_f1_20250901_014339.xlsx
+2025-09-01 01:43:39 - __main__ - INFO - Excel file exported successfully: output\invoice_lakeshore_f1_20250901_014339.xlsx
+2025-09-01 01:45:43 - root - INFO - ============================================================
+2025-09-01 01:45:43 - root - INFO - Invoice Parser Application Started
+2025-09-01 01:45:43 - root - INFO - Log level: INFO
+2025-09-01 01:45:43 - root - INFO - Log file: invoice_parser.log
+2025-09-01 01:45:43 - root - INFO - Timestamp: 2025-09-01T01:45:43.741470
+2025-09-01 01:45:43 - root - INFO - ============================================================
+2025-09-01 01:45:44 - __main__ - INFO - Starting invoice parsing for breakthru from f2.png
+2025-09-01 01:45:44 - invoice_parser - INFO - Processing f2.png for vendor breakthru
+2025-09-01 01:45:44 - file_processor - INFO - Loading image: f2.png
+2025-09-01 01:45:44 - file_processor - INFO - Successfully loaded image: f2.png
+2025-09-01 01:45:44 - invoice_parser - INFO - Processed file into 1 images
+2025-09-01 01:45:44 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-09-01 01:46:20 - openai_client - INFO - Successfully received response from OpenAI
+2025-09-01 01:46:20 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account']
+2025-09-01 01:46:20 - invoice_parser - INFO - Successfully parsed invoice with 9 items
+2025-09-01 01:46:20 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_breakthru_f2_20250901_014620.json
+2025-09-01 01:46:20 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-09-01 01:46:20 - excel_exporter - INFO - Creating summary sheet...
+2025-09-01 01:46:20 - excel_exporter - INFO - Creating items sheet...
+2025-09-01 01:46:20 - excel_exporter - INFO - Creating vendor sheet...
+2025-09-01 01:46:20 - excel_exporter - INFO - Creating validation sheet...
+2025-09-01 01:46:20 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_breakthru_f2_20250901_014620.xlsx
+2025-09-01 01:46:20 - __main__ - INFO - Excel file exported successfully: output\invoice_breakthru_f2_20250901_014620.xlsx
+2025-10-09 21:52:36 - root - INFO - ============================================================
+2025-10-09 21:52:36 - root - INFO - Invoice Parser Application Started
+2025-10-09 21:52:36 - root - INFO - Log level: INFO
+2025-10-09 21:52:36 - root - INFO - Log file: invoice_parser.log
+2025-10-09 21:52:36 - root - INFO - Timestamp: 2025-10-09T21:52:36.340172
+2025-10-09 21:52:36 - root - INFO - ============================================================
+2025-10-09 21:52:37 - __main__ - INFO - Starting invoice parsing for lakeshore from f1.png
+2025-10-09 21:52:37 - invoice_parser - INFO - Processing f1.png for vendor lakeshore
+2025-10-09 21:52:37 - file_processor - INFO - Loading image: f1.png
+2025-10-09 21:52:37 - file_processor - INFO - Successfully loaded image: f1.png
+2025-10-09 21:52:37 - invoice_parser - INFO - Processed file into 1 images
+2025-10-09 21:52:37 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-09 21:52:57 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-09 21:52:57 - validators - INFO - Validation complete. Flags: ['missing_section: vendor', 'missing_section: invoice', 'missing_section: account', 'totals_mismatch']
+2025-10-09 21:52:57 - invoice_parser - INFO - Successfully parsed invoice with 7 items
+2025-10-09 21:52:57 - __main__ - INFO - Successfully parsed invoice. Output saved to: output\invoice_lakeshore_f1_20251009_215257.json
+2025-10-09 21:52:57 - excel_exporter - INFO - Starting Excel export for invoice: 125504
+2025-10-09 21:52:57 - excel_exporter - INFO - Creating summary sheet...
+2025-10-09 21:52:57 - excel_exporter - INFO - Creating items sheet...
+2025-10-09 21:52:57 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-09 21:52:57 - excel_exporter - INFO - Creating validation sheet...
+2025-10-09 21:52:58 - excel_exporter - INFO - Excel file exported successfully to: output\invoice_lakeshore_f1_20251009_215257.xlsx
+2025-10-09 21:52:58 - __main__ - INFO - Excel file exported successfully: output\invoice_lakeshore_f1_20251009_215257.xlsx
