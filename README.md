@@ -43,7 +43,6 @@ AI-powered invoice parsing system that extracts structured data from beverage di
    ```env
    OPENAI_API_KEY=your_openai_api_key_here
    OPENAI_MODEL=gpt-4o-mini
-   LOG_LEVEL=INFO
    ```
 
 ## Usage
@@ -72,8 +71,6 @@ The app will open automatically in your browser at `http://localhost:8501`
 - ✅ Validation flags display
 - ✅ Step-by-step guided workflow
 - ✅ Professional Excel export with multiple sheets
-
-**See [STREAMLIT_GUIDE.md](STREAMLIT_GUIDE.md) for detailed web interface documentation.**
 
 ---
 
