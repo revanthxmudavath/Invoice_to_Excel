@@ -128,6 +128,7 @@ class ExcelExporter:
             ("Total Bottles", data.get("total_bottles")),
             ("Total Liquor Gallons", data.get("total_liquor_gallons")),
             ("Total Beer Gallons", data.get("total_beer_gallons")),
+            ("Total Sales", data.get("total_sales")),
             ("Gross Total", data.get("gross_total")),
             ("Total Discount", data.get("total_discount")),
             ("Net Amount", data.get("net_amount")),
@@ -146,18 +147,111 @@ class ExcelExporter:
     def _create_items_sheet(self, wb: openpyxl.Workbook, data: Dict[str, Any]):
         """Create items sheet with detailed line items"""
         ws = wb.create_sheet("Items")
-        
+
+        # Detect vendor type from data or meta
+        vendor = data.get("meta", {}).get("vendor_detected", "").lower()
+        items = data.get("items", [])
+
+        # If no vendor detected, try to infer from item fields
+        if not vendor and items:
+            first_item = items[0]
+            if "Case" in first_item and "cs_price" in first_item:
+                vendor = "breakthru"
+            elif "item_number" in first_item and "qty" in first_item:
+                vendor = "lakeshore"
+            elif "location_code" in first_item or "net_bottle_price" in first_item:
+                vendor = "southern_glazers"
+
+        # Define headers and field mappings based on vendor
+        if vendor == "breakthru":
+            headers = [
+                "Case", "Btles", "Item", "Size", "BPC", "Description",
+                "cs_price", "cs_disc", "cs_net", "cnty_tax", "city_tax",
+                "ext_w/o_tax", "slp", "deal"
+            ]
+            field_mapping = {
+                "Case": ["Case", "cases"],
+                "Btles": ["Btles", "bottles"],
+                "Item": ["Item", "item_number", "product_code"],
+                "Size": ["Size", "size"],
+                "BPC": ["BPC", "bpc"],
+                "Description": ["Description", "description"],
+                "cs_price": ["cs_price"],
+                "cs_disc": ["cs_disc"],
+                "cs_net": ["cs_net"],
+                "cnty_tax": ["cnty_tax"],
+                "city_tax": ["city_tax"],
+                "ext_w/o_tax": ["ext_w/o_tax", "ext_w_o_tax"],
+                "slp": ["slp"],
+                "deal": ["deal"]
+            }
+            column_widths = [8, 12, 35, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
+
+        elif vendor == "lakeshore":
+            headers = [
+                "Item #", "Qty", "Description", "UPC", "Size",
+                "Unit Price", "Discount", "Disc. Price", "Deposit", "Extended Amount"
+            ]
+            field_mapping = {
+                "Item #": ["item_number", "Item"],
+                "Qty": ["qty", "quantity"],
+                "Description": ["description", "Description"],
+                "UPC": ["upc"],
+                "Size": ["size", "Size"],
+                "Unit Price": ["unit_price"],
+                "Discount": ["discount"],
+                "Disc. Price": ["discounted_price"],
+                "Deposit": ["deposit"],
+                "Extended Amount": ["extended_amount", "net_amount"]
+            }
+            column_widths = [15, 10, 40, 15, 12, 15, 15, 15, 15, 18]
+
+        elif vendor == "southern_glazers":
+            headers = [
+                "Location", "Cases", "Bottles", "Size", "Description",
+                "Promo", "UPC", "Product Code", "Net Btl Price",
+                "Unit Price", "Div Cde", "Unit Disc", "Net Amount"
+            ]
+            field_mapping = {
+                "Location": ["location_code"],
+                "Cases": ["cases", "Case"],
+                "Bottles": ["bottles", "Btles"],
+                "Size": ["size", "Size"],
+                "Description": ["description", "Description"],
+                "Promo": ["promo_number"],
+                "UPC": ["upc"],
+                "Product Code": ["product_code", "item_number"],
+                "Net Btl Price": ["net_bottle_price"],
+                "Unit Price": ["unit_price"],
+                "Div Cde": ["div_cde"],
+                "Unit Disc": ["unit_discount"],
+                "Net Amount": ["net_amount", "extended_amount"]
+            }
+            column_widths = [12, 10, 10, 12, 40, 12, 15, 15, 15, 15, 10, 12, 15]
+
+        else:
+            # Default/generic format - use all available fields
+            self.logger.warning(f"Unknown vendor '{vendor}', using generic format")
+            headers = [
+                "Item", "Qty/Cases", "Bottles", "Description", "Size",
+                "Unit Price", "Discount", "Net Amount"
+            ]
+            field_mapping = {
+                "Item": ["Item", "item_number", "product_code"],
+                "Qty/Cases": ["Case", "cases", "qty"],
+                "Bottles": ["Btles", "bottles"],
+                "Description": ["Description", "description"],
+                "Size": ["Size", "size"],
+                "Unit Price": ["unit_price", "cs_price"],
+                "Discount": ["discount", "cs_disc", "unit_discount"],
+                "Net Amount": ["net_amount", "cs_net", "extended_amount"]
+            }
+            column_widths = [15, 12, 12, 40, 12, 15, 15, 15]
+
         # Set column widths
-        column_widths = [8, 12, 35, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
         for i, width in enumerate(column_widths, 1):
-            ws.column_dimensions[get_column_letter(i)].width = width
-        
-        # Headers
-        headers = [
-            "Case", "Btles", "Item", "Size", "BPC", "Description", 
-            "cs_price", "cs_disc", "cs_net", "cnty_tax", "city_tax", 
-            "ext_w/o_tax", "slp", "deal"
-        ]
+            if i <= len(column_widths):
+                ws.column_dimensions[get_column_letter(i)].width = width
         
         for col, header in enumerate(headers, 1):
             cell = ws.cell(row=1, column=col, value=header)
@@ -170,13 +264,21 @@ class ExcelExporter:
         items = data.get("items", [])
         for row_idx, item in enumerate(items, 2):
             for col_idx, header in enumerate(headers, 1):
-                value = item.get(header, "")
+                # Try multiple field names from the mapping
+                field_names = field_mapping.get(header, [header])
+                value = ""
+                for field_name in field_names:
+                    value = item.get(field_name)
+                    if value is not None and value != "None" and value != "":
+                        break
+
                 # Handle None and "None" values
                 if value is None or value == "None":
                     value = ""
+
                 cell = ws.cell(row=row_idx, column=col_idx, value=value)
                 cell.border = self.border
-                
+
                 # Format numeric columns
                 if header in ["cs_price", "cs_disc", "cs_net", "cnty_tax", "city_tax", "ext_w/o_tax"]:
                     if value and str(value).replace('.', '').replace('-', '').isdigit():

@@ -1,6 +1,6 @@
-# Invoice-to-JSON Extraction Workflow
+# Invoice-to-Excel Parser
 
-A local function that takes in a PDF/PNG/JPG invoice, calls an OpenAI 4o mini model with vendor-specific prompts, and saves the extracted invoice as JSON. No server or API layer; just direct model calls + local JSON storage for verification.
+AI-powered invoice parsing system that extracts structured data from beverage distributor invoices using OpenAI Vision API. Available as both a **web interface** (Streamlit) and **command-line tool**.
 
 ## Supported Vendors
 
@@ -10,12 +10,13 @@ A local function that takes in a PDF/PNG/JPG invoice, calls an OpenAI 4o mini mo
 
 ## Features
 
+- 🌐 **Web Interface**: User-friendly Streamlit app with real-time preview
 - 🖼️ **Multi-format Support**: PDF, PNG, JPG, JPEG
 - 🤖 **AI-Powered Parsing**: Uses OpenAI Vision API for accurate extraction
-- 📊 **Structured Output**: Consistent JSON schema across all vendors
+- 📊 **Excel Export**: Professional formatted workbooks with multiple sheets
 - ✅ **Validation**: Pydantic-based data validation with business rules
 - 📁 **Local Storage**: Saves results to disk for verification
-- 🔄 **Batch Processing**: Process multiple files at once
+- 🔄 **Batch Processing**: Process multiple files at once (CLI)
 - 📝 **Comprehensive Logging**: Detailed logging for debugging
 
 ## Installation
@@ -37,7 +38,7 @@ A local function that takes in a PDF/PNG/JPG invoice, calls an OpenAI 4o mini mo
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables**:
+4. **Set up environment variables** (for CLI usage):
    Create a `.env` file in the project root:
    ```env
    OPENAI_API_KEY=your_openai_api_key_here
@@ -47,7 +48,38 @@ A local function that takes in a PDF/PNG/JPG invoice, calls an OpenAI 4o mini mo
 
 ## Usage
 
-### Basic Usage
+### 🌐 Web Interface (Recommended)
+
+**Quick Start:**
+```bash
+# Run the web application
+streamlit run streamlit_app.py
+
+# Or use the provided scripts:
+# Windows:
+run_web_app.bat
+
+# Linux/Mac:
+./run_web_app.sh
+```
+
+The app will open automatically in your browser at `http://localhost:8501`
+
+**Features:**
+- ✅ No `.env` file needed - enter API key in the UI
+- ✅ Real-time Excel preview before download
+- ✅ Interactive data tables
+- ✅ Validation flags display
+- ✅ Step-by-step guided workflow
+- ✅ Professional Excel export with multiple sheets
+
+**See [STREAMLIT_GUIDE.md](STREAMLIT_GUIDE.md) for detailed web interface documentation.**
+
+---
+
+### 💻 Command Line Interface
+
+**Basic Usage:**
 
 Parse a single invoice:
 ```bash

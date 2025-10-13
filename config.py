@@ -23,7 +23,7 @@ class Config:
             )
         
         # Model configuration
-        self.model_name = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+        self.model_name = os.getenv("OPENAI_MODEL", "gpt-4.o")
         self.max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "16000"))
         self.temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.1"))
         
@@ -56,7 +56,19 @@ class Config:
 
 Required top-level fields: vendor_name, vendor_address, vendor_phone, invoice_datetime, account_number, account_info, invoice_number, po_number, license, load, terms, driver, sales_rep, invoice_date, cases, bottles, kegs, misc, credits, total_sales, total_discount, barcode.
 
-Items array: each with item_number, qty, description, upc, unit_price, discount, discounted_price, deposit, extended_amount, size.
+CRITICAL INSTRUCTIONS FOR EXTRACTING ITEMS:
+The items table starts after the "ITEM# QTY DESCRIPTION U.P.C. PRICE DISC D.Price DEP EXT" header row.
+Each line item has: ITEM#, QTY, DESCRIPTION (with size on next line), U.P.C., PRICE, DISC, D.Price, DEP, EXT, and a BARCODE below it.
+The items table ends at the dashed line (----------) before "Cases:", "Bottles:", etc.
+
+YOU MUST:
+1. Look at the ENTIRE items table from top to bottom until you see the dashed line
+2. Count how many barcodes appear in the items section - this tells you how many items exist
+3. Extract EVERY line, including the LAST line right before the dashed line/totals section
+4. The LAST ITEM is often a different product and appears right before totals - DO NOT SKIP IT!
+5. Verify: number of items in your items array MUST EQUAL number of barcodes
+
+Each item needs: item_number, qty, description, upc, unit_price, discount, discounted_price, deposit, extended_amount, size.
 
 Notes: If you can read barcode(s), include their numbers; else "None"."""
 
@@ -66,7 +78,7 @@ Notes: If you can read barcode(s), include their numbers; else "None"."""
 
 Required fields: vendor_name, vendor_address, vendor_phone, invoice_number, customer_number, route, stop, terms, license, exp_date, chain, delivery_number, invoice_date, due_date, po_number, special_instructions, barcode, total_bottles, total_liquor_gallons, total_beer_gallons, gross_total, total_discount, net_amount.
 
-Items array: Extract ONLY the first 10 visible table rows with Case, Btles, Item, Size, BPC, Description, cs_price, cs_disc, cs_net, cnty_tax, city_tax, ext_w/o_tax, slp, deal. Use "None" for empty values. For barcode, use only the first 20 characters if it's very long. DO NOT try to extract all items - limit to first 10 rows maximum."""
+Items array: Extract ALL visible line items from the invoice table, including the very last item at the bottom. Each item should have: Case, Btles, Item, Size, BPC, Description, cs_price, cs_disc, cs_net, cnty_tax, city_tax, ext_w/o_tax, slp, deal. Use "None" for empty values. For barcode, use only the first 20 characters if it's very long. IMPORTANT: Do not skip any items - extract every single row from the items table, even if there are many items."""
 
     def _get_southern_glazers_prompt(self) -> str:
         """Get the prompt for Southern Glazer's of IL invoices"""
@@ -74,7 +86,7 @@ Items array: Extract ONLY the first 10 visible table rows with Case, Btles, Item
 
 Top-level fields to return exactly: vendor_name, remit_to_address, vendor_phone, account_number, invoice_number, route, stop, page, ship_date, due_date, carton, invoice_date, phone_number, pay_this_amount, total_discount, net_amount, customer_name, customer_address. Map labels precisely: 'TOTAL # BTLS:' → total_bottles; 'GROSS TOTAL' → gross_total; 'TOTAL DISCOUNT' → total_discount; 'PAY THIS AMOUNT' → pay_this_amount; 'NET AMOUNT' → net_amount. Use the exact numbers printed; do not compute or guess.
 
-Items: For each visible line, capture: location_code, cases, bottles, size, description, pack, promo_number, upc, product_code, net_bottle_price, unit_price, div_cde, unit_discount, net_amount.
+Items: Extract ALL line items from the invoice table, including the very last item. For each visible line, capture: location_code, cases, bottles, size, description, pack, promo_number, upc, product_code, net_bottle_price, unit_price, div_cde, unit_discount, net_amount. Do not skip any items - extract every single row.
 
 Totals at bottom: cases_page_total, cases_order_total, bottles_page_total, bottles_order_total, liquor_gallons, beer_gallons, wine_14%, gross_total, total_bottles, previous_period_sales. Also capture any delivery charges as separate item lines. If any value is empty, include it as "None"."""
 

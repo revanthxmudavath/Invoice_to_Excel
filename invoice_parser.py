@@ -69,13 +69,25 @@ class InvoiceParser:
             
             # Validate against schema
             validated_data = self.validator.validate_invoice(parsed_data, vendor)
-            
+
             # Add validation flags to metadata
             if self.validator.validation_flags:
                 validated_data["meta"]["validation_flags"] = self.validator.validation_flags
-            
+
+            # Check if items count matches barcode count (for invoices with barcodes)
+            items_count = len(validated_data.get('items', []))
+            barcodes = validated_data.get('barcode', [])
+            if isinstance(barcodes, list) and len(barcodes) > 0:
+                barcode_count = len(barcodes)
+                if items_count < barcode_count:
+                    warning_msg = f"WARNING: Found {barcode_count} barcodes but only {items_count} items extracted. Possible missing items!"
+                    self.logger.warning(warning_msg)
+                    if "validation_flags" not in validated_data["meta"]:
+                        validated_data["meta"]["validation_flags"] = []
+                    validated_data["meta"]["validation_flags"].append(warning_msg)
+
             self.logger.info(f"Successfully parsed invoice with {len(validated_data.get('items', []))} items")
-            
+
             return validated_data
             
         except Exception as e:
@@ -85,25 +97,54 @@ class InvoiceParser:
     def _parse_json_response(self, raw_response: str) -> Dict[str, Any]:
         """Parse the raw JSON response from OpenAI"""
         try:
+            # Save original for comparison
+            original_response = raw_response
+
             # Clean the response - remove any markdown formatting
             cleaned_response = raw_response.strip()
             if cleaned_response.startswith("```json"):
                 cleaned_response = cleaned_response[7:]
             if cleaned_response.endswith("```"):
                 cleaned_response = cleaned_response[:-3]
-            
+
             cleaned_response = cleaned_response.strip()
-            
-            # Try to fix common JSON issues
-            cleaned_response = self._fix_json_response(cleaned_response)
-            
-            # Parse JSON
-            parsed = json.loads(cleaned_response)
-            
+
+            self.logger.debug(f"After markdown cleanup: {len(cleaned_response)} chars")
+
+            # First, try to parse the JSON as-is without any "fixing"
+            try:
+                parsed = json.loads(cleaned_response)
+                self.logger.info("JSON is already valid, no fixing needed")
+                return parsed
+            except json.JSONDecodeError as e:
+                # JSON is invalid, try to fix it
+                self.logger.warning(f"JSON is invalid (error: {e}), attempting to fix...")
+
+                before_fix = cleaned_response
+
+                # Try to fix common JSON issues
+                cleaned_response = self._fix_json_response(cleaned_response)
+
+                # Log the fix attempt
+                self.logger.info(f"Attempted fix: {len(before_fix)} chars -> {len(cleaned_response)} chars")
+
+                # Save both versions for comparison
+                try:
+                    with open('json_before_fix.txt', 'w', encoding='utf-8') as f:
+                        f.write(before_fix)
+                    with open('json_after_fix.txt', 'w', encoding='utf-8') as f:
+                        f.write(cleaned_response)
+                    self.logger.info("Saved before/after fix files for comparison")
+                except:
+                    pass
+
+                # Parse the fixed JSON
+                parsed = json.loads(cleaned_response)
+
             # Ensure we have the basic structure
             if not isinstance(parsed, dict):
                 raise ValueError("Response is not a valid JSON object")
-            
+
             return parsed
             
         except json.JSONDecodeError as e:
@@ -138,21 +179,53 @@ class InvoiceParser:
                         # It's just a value, close it
                         response = response[:last_comma + 1] + 'null'
         
-        # Handle truncated items array specifically - more aggressive approach
+        # Handle truncated items array specifically
         if '"items": [' in response:
             items_start = response.find('"items": [')
             if items_start > 0:
-                # Look for incomplete items
                 items_content = response[items_start + 10:]  # Skip '"items": ['
-                
-                # Find the last complete item
-                last_complete_item = items_content.rfind('},')
-                if last_complete_item > 0:
-                    # Cut off at the last complete item and close properly
-                    response = response[:items_start + 10 + last_complete_item + 1] + ']'
-                elif items_content.count('[') > items_content.count(']'):
-                    # Just close the array if it's incomplete
-                    response = response.rstrip(',') + ']'
+
+                # Only try to fix if the array is truly incomplete (no closing bracket)
+                # Check if there's a valid closing bracket for the items array
+                bracket_count = 1  # We already opened with '['
+                array_end = -1
+
+                for i, char in enumerate(items_content):
+                    if char == '[':
+                        bracket_count += 1
+                    elif char == ']':
+                        bracket_count -= 1
+                        if bracket_count == 0:
+                            # Found the closing bracket for items array
+                            array_end = i
+                            break
+
+                # If array_end is -1, the array is incomplete
+                if array_end == -1:
+                    # Array is incomplete - find the last complete item
+                    # Look for '}, {' or '}]' patterns (the last item won't have comma)
+                    last_complete_item = items_content.rfind('},')
+
+                    if last_complete_item > 0:
+                        # Found at least one complete item with comma, keep all up to and including it
+                        response = response[:items_start + 10 + last_complete_item + 1] + ']'
+                    else:
+                        # No comma found, check if there's at least one complete item
+                        last_brace = items_content.rfind('}')
+                        if last_brace > 0:
+                            # Check if this looks like a complete object
+                            # by counting braces before it
+                            before_brace = items_content[:last_brace + 1]
+                            if before_brace.count('{') == before_brace.count('}'):
+                                # This is a complete item, keep it
+                                response = response[:items_start + 10 + last_brace + 1] + ']'
+                            else:
+                                # Incomplete, close the array empty
+                                response = response[:items_start + 10] + '[]'
+                        else:
+                            # No complete items found, make it an empty array
+                            response = response[:items_start + 10] + '[]'
+                # else: Array is complete, don't modify it
         
         # If response ends with an incomplete array, close it
         if response.count('[') > response.count(']'):
