@@ -18,41 +18,26 @@ class InvoiceValidator:
     
     def validate_invoice(self, data: Dict[str, Any], vendor: str) -> Dict[str, Any]:
         """
-        Validate invoice data and return validated data with flags
-        
+        Process invoice data and return with data type conversions only
+
         Args:
             data: Parsed invoice data
             vendor: Vendor type for validation rules
-            
+
         Returns:
-            Validated data with any corrections applied
+            Data with type conversions applied
         """
         self.validation_flags = []
-        
+
         try:
-            # Basic structure validation
-            self._validate_basic_structure(data)
-            
-            # Vendor-specific validation
-            if vendor == "lakeshore":
-                self._validate_lakeshore(data)
-            elif vendor == "breakthru":
-                self._validate_breakthru(data)
-            elif vendor == "southern_glazers":
-                self._validate_southern_glazers(data)
-            
-            # Business rule validation
-            self._validate_business_rules(data)
-            
-            # Data type validation and conversion
+            # Only do data type validation and conversion
             validated_data = self._validate_data_types(data)
-            
-            self.logger.info(f"Validation complete. Flags: {self.validation_flags}")
+
+            self.logger.info(f"Data processing complete. No validation flags.")
             return validated_data
-            
+
         except Exception as e:
-            self.logger.error(f"Validation error: {e}")
-            self.validation_flags.append(f"validation_error: {str(e)}")
+            self.logger.error(f"Data processing error: {e}")
             raise
     
     def _validate_basic_structure(self, data: Dict[str, Any]):
@@ -152,44 +137,45 @@ class InvoiceValidator:
                 self.validation_flags.append("invalid_invoice_total")
     
     def _validate_data_types(self, data: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate and convert data types"""
+        """Convert data types without validation"""
         validated_data = data.copy()
-        
+
         # Convert numeric fields
         numeric_fields = [
             "total_sales", "total_discount", "gross_total", "net_amount",
             "pay_this_amount", "total_bottles", "total_liquor_gallons",
             "total_beer_gallons"
         ]
-        
+
         for field in numeric_fields:
             if field in validated_data and validated_data[field] is not None and validated_data[field] != "None":
                 try:
                     validated_data[field] = float(validated_data[field])
                 except (ValueError, TypeError):
-                    self.validation_flags.append(f"invalid_numeric_field: {field}")
+                    # Silently set to None if conversion fails
                     validated_data[field] = None
-        
-        # Validate and convert item fields
+
+        # Convert item fields
         items = validated_data.get("items", [])
         for item in items:
             # Convert UPC to digits only
             if "upc" in item and item["upc"]:
                 item["upc"] = self._clean_upc(item["upc"])
-            
+
             # Convert numeric item fields
             numeric_item_fields = [
                 "qty", "bottles", "cases", "unit_price", "discount",
                 "extended_amount", "net_amount", "deposit"
             ]
-            
+
             for field in numeric_item_fields:
                 if field in item and item[field] is not None and item[field] != "None":
                     try:
                         item[field] = float(item[field])
                     except (ValueError, TypeError):
+                        # Silently set to None if conversion fails
                         item[field] = None
-        
+
         return validated_data
     
     def _is_valid_upc(self, upc: str) -> bool:

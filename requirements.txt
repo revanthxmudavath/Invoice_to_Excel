@@ -1,5 +1,5 @@
 # Core dependencies
-openai>=1.0.0
+openai>=2.0.0
 python-dotenv>=1.0.0
 
 # Image processing
@@ -15,6 +15,10 @@ xlsxwriter>=3.1.0
 
 # Logging and utilities
 colorama>=0.4.6
+
+# Web Interface
+streamlit>=1.30.0
+pandas>=2.0.0
 
 # Development dependencies (optional)
 pytest>=7.0.0

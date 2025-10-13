@@ -74,6 +74,26 @@ class OpenAIClient:
             if response.choices and len(response.choices) > 0:
                 content = response.choices[0].message.content
                 self.logger.info("Successfully received response from OpenAI")
+
+                # Log response details for debugging
+                self.logger.debug(f"Response length: {len(content)} characters")
+                self.logger.debug(f"Response finish_reason: {response.choices[0].finish_reason}")
+
+                # Save raw response to file for inspection
+                try:
+                    with open('raw_openai_response.txt', 'w', encoding='utf-8') as f:
+                        f.write("="*80 + "\n")
+                        f.write("RAW OPENAI RESPONSE\n")
+                        f.write("="*80 + "\n")
+                        f.write(f"Length: {len(content)} characters\n")
+                        f.write(f"Finish Reason: {response.choices[0].finish_reason}\n")
+                        f.write("="*80 + "\n")
+                        f.write(content)
+                        f.write("\n" + "="*80 + "\n")
+                    self.logger.info("Raw response saved to raw_openai_response.txt")
+                except Exception as e:
+                    self.logger.warning(f"Could not save raw response: {e}")
+
                 return content
             else:
                 raise ValueError("No response content received from OpenAI")
