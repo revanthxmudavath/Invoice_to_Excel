@@ -4461,3 +4461,9 @@ openai.APIConnectionError: Connection error.
 2025-10-19 15:32:08 - root - INFO - Log file: invoice_parser.log
 2025-10-19 15:32:08 - root - INFO - Timestamp: 2025-10-19T15:32:08.441510
 2025-10-19 15:32:08 - root - INFO - ============================================================
+2025-10-26 15:53:54 - root - INFO - ============================================================
+2025-10-26 15:53:54 - root - INFO - Invoice Parser Application Started
+2025-10-26 15:53:54 - root - INFO - Log level: INFO
+2025-10-26 15:53:54 - root - INFO - Log file: invoice_parser.log
+2025-10-26 15:53:54 - root - INFO - Timestamp: 2025-10-26T15:53:54.515714
+2025-10-26 15:53:54 - root - INFO - ============================================================

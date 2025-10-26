@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  invoice-parser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: invoice-parser-web
+    ports:
+      - "8501:8501"
+    environment:
+      # Optional: Pre-configure OpenAI API key (not recommended for production)
+      # OPENAI_API_KEY: ${OPENAI_API_KEY}
+      PORT: 8501
+    volumes:
+      # Optional: Mount output directory to persist generated files
+      - ./output:/app/output
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
