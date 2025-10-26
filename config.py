@@ -23,13 +23,14 @@ class Config:
             )
         
         # Model configuration
-        self.model_name = os.getenv("OPENAI_MODEL", "gpt-4.o")
-        self.max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "16000"))
-        self.temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.1"))
+        # Using gpt-4o for better vision capabilities with complex tables
+        self.model_name = os.getenv("OPENAI_MODEL", "gpt-4o")
+        self.max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "16384"))  # gpt-4o max output tokens
+        self.temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.0"))  # 0 for maximum consistency
         
         # File processing configuration
         self.supported_formats = [".pdf", ".png", ".jpg", ".jpeg"]
-        self.max_file_size_mb = int(os.getenv("MAX_FILE_SIZE_MB", "10"))
+        self.max_file_size_mb = int(os.getenv("MAX_FILE_SIZE_MB", "20"))
         
         # Output configuration
         self.output_dir = Path(os.getenv("OUTPUT_DIR", "output"))
@@ -74,12 +75,48 @@ Notes: If you can read barcode(s), include their numbers; else "None"."""
 
     def _get_breakthru_prompt(self) -> str:
         """Get the prompt for Breakthru Beverage Illinois invoices"""
-        return """You are an invoice reader for Breakthru Beverage Illinois invoices. Return STRICT JSON only (no code fences or commentary). If a field is absent, use "None". Keep responses concise and prioritize essential data.
+        return """You are an expert invoice reader for Breakthru Beverage Illinois invoices. Return STRICT JSON only (no code fences or commentary). Use "None" for absent text fields and null for absent numeric fields.
 
-Required fields: vendor_name, vendor_address, vendor_phone, invoice_number, customer_number, route, stop, terms, license, exp_date, chain, delivery_number, invoice_date, due_date, po_number, special_instructions, barcode, total_bottles, total_liquor_gallons, total_beer_gallons, gross_total, total_discount, net_amount.
+REQUIRED TOP-LEVEL FIELDS:
+vendor_name, vendor_address, vendor_phone, invoice_number, customer_number, route, stop, terms, license, exp_date, chain, delivery_number, invoice_date, due_date, po_number, special_instructions, barcode, total_bottles, total_liquor_gallons, total_beer_gallons, gross_total, total_discount, net_amount
 
-Items array: Extract ALL visible line items from the invoice table, including the very last item at the bottom. Each item should have: Case, Btles, Item, Size, BPC, Description, cs_price, cs_disc, cs_net, cnty_tax, city_tax, ext_w/o_tax, slp, deal. Use "None" for empty values. For barcode, use only the first 20 characters if it's very long. IMPORTANT: Do not skip any items - extract every single row from the items table, even if there are many items."""
+CRITICAL: The line items array MUST be named "items" (not "line_items").
 
+TABLE STRUCTURE:
+The invoice has a dense table with very small text. Each row has data in specific column positions, followed by a BARCODE underneath (ignore barcodes).
+
+COLUMN HEADERS (in exact order from left to right):
+Case | Btles | Item | Size | BPC | Description | (gap with barcode) | CS Price | CS Disc | CS Net | Cnty Tax | City Tax | Ext W/O | SLP | Deal    
+
+CRITICAL READING INSTRUCTIONS:
+1. Case: FAR LEFT column - single digit (1-9)
+2. Btles: Usually blank (write "None")
+3. Item: 7-DIGIT number in the Item column (e.g., 9000322, 9760614) - NOT the barcode below!
+4. Size: Look for bottle size like 375ML, 100ML, 750ML, 1L, 1.75L
+5. BPC: Small number (6, 12, 24, 48, 120) - bottles per case
+6. Description: Product name in caps (e.g., CROWN ROYAL 80, FIREBALL CINNAMON WHISKY)
+7. cs_price: First price column (3 digits usually, e.g., 322.25, 115.00)
+8. cs_disc: Second price column (discount, e.g., 77.00, 62.20) - can be 0
+9. cs_net: Third price column (net price after discount, e.g., 245.25, 52.80)
+10. cnty_tax: Usually 0.00
+11. city_tax: Usually 0.00
+12. ext_w_o_tax: Extended amount (rightmost price, e.g., 981.00, 52.80)
+13. slp: 3-4 DIGIT code only (e.g., 644, 470) - NOT 8 digits!
+14. deal: 8-digit code at FAR RIGHT (e.g., 80858535, 80820373)
+
+CRITICAL WARNINGS - READ CAREFULLY:
+- The BARCODE appears BELOW each row - DO NOT use barcode as Item number!
+- Item column contains 7-digit codes like 9000322 (NOT 13-digit barcodes)
+- SLP is only 3-4 digits (644, 470) - if you see 8 digits, you're reading the Deal column
+- There are THREE separate price columns: cs_price, cs_disc, cs_net - read carefully
+- Size values like "375ML" go in Size field, NOT Btles field
+- Focus on the row data, ignore barcodes between rows
+
+EXAMPLE ROW (to help you understand):
+Case=4, Btles=None, Item=9000322, Size=375ML, BPC=24, Description=CROWN ROYAL 80, cs_price=322.25, cs_disc=77.00, cs_net=245.25, cnty_tax=0.00, city_tax=0.00, ext_w_o_tax=981.00, slp=644, deal=80858535
+
+Extract ALL line items. Return JSON with top-level fields + "items" array. Be precise with numeric values."""
+    
     def _get_southern_glazers_prompt(self) -> str:
         """Get the prompt for Southern Glazer's of IL invoices"""
         return """You are an invoice reader for Southern Glazer's of IL invoices. Output ONLY JSON (no extra text). Use "None" when a field is not present. When parsing the table, align values to the visible column headers. For UPC, output digits only (no dashes) and prefer the UPC printed on the same line; do not copy the big page barcode.

@@ -331,17 +331,17 @@ def main():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            if st.button("🏢 Lakeshore Beverage", use_container_width=True, type="primary" if st.session_state.selected_vendor == "lakeshore" else "secondary"):
+            if st.button("🏢 Lakeshore Beverage", width="stretch", type="primary" if st.session_state.selected_vendor == "lakeshore" else "secondary"):
                 st.session_state.selected_vendor = "lakeshore"
                 reset_processing_state()
 
         with col2:
-            if st.button("🏢 Breakthru Beverage", use_container_width=True, type="primary" if st.session_state.selected_vendor == "breakthru" else "secondary"):
+            if st.button("🏢 Breakthru Beverage", width="stretch", type="primary" if st.session_state.selected_vendor == "breakthru" else "secondary"):
                 st.session_state.selected_vendor = "breakthru"
                 reset_processing_state()
 
         with col3:
-            if st.button("🏢 Southern Glazer's", use_container_width=True, type="primary" if st.session_state.selected_vendor == "southern_glazers" else "secondary"):
+            if st.button("🏢 Southern Glazer's", width="stretch", type="primary" if st.session_state.selected_vendor == "southern_glazers" else "secondary"):
                 st.session_state.selected_vendor = "southern_glazers"
                 reset_processing_state()
 
@@ -364,7 +364,7 @@ def main():
         uploaded_file = st.file_uploader(
             "Choose an invoice file (PDF, PNG, JPG, JPEG)",
             type=["pdf", "png", "jpg", "jpeg"],
-            help="Maximum file size: 10MB"
+            help="Maximum file size: 20MB"
         )
 
         if uploaded_file:
@@ -378,12 +378,12 @@ def main():
             with col2:
                 # Preview image if it's an image file
                 if uploaded_file.type.startswith('image/'):
-                    st.image(uploaded_file, caption="Preview", use_container_width=True)
+                    st.image(uploaded_file, caption="Preview", width="stretch")
 
             # Process button
             st.markdown("---")
 
-            if st.button("🚀 Process Invoice", type="primary", use_container_width=True):
+            if st.button("🚀 Process Invoice", type="primary", width="stretch"):
                 try:
                     # Processing stages
                     with st.status("Processing invoice...", expanded=True) as status:
@@ -486,7 +486,7 @@ def main():
             st.markdown("#### Invoice Summary")
             summary_df = format_summary_data(parsed_data)
             if not summary_df.empty:
-                st.dataframe(summary_df, use_container_width=True, hide_index=True)
+                st.dataframe(summary_df, width="stretch", hide_index=True)
 
             # Totals section
             st.markdown("#### Totals")
@@ -507,13 +507,13 @@ def main():
 
             if totals_data:
                 totals_df = pd.DataFrame(totals_data)
-                st.dataframe(totals_df, use_container_width=True, hide_index=True)
+                st.dataframe(totals_df, width="stretch", hide_index=True)
 
         with tab2:
             st.markdown("#### Line Items")
             items_df = format_items_data(parsed_data)
             if not items_df.empty:
-                st.dataframe(items_df, use_container_width=True, hide_index=True)
+                st.dataframe(items_df, width="stretch", hide_index=True)
             else:
                 st.info("No items extracted")
 
@@ -535,7 +535,7 @@ def main():
 
             if vendor_data:
                 vendor_df = pd.DataFrame(vendor_data)
-                st.dataframe(vendor_df, use_container_width=True, hide_index=True)
+                st.dataframe(vendor_df, width="stretch", hide_index=True)
 
         with tab4:
             st.markdown("#### Validation & Metadata")
@@ -553,7 +553,7 @@ def main():
                     meta_data.append({"Field": field, "Value": str(value)})
 
             meta_df = pd.DataFrame(meta_data)
-            st.dataframe(meta_df, use_container_width=True, hide_index=True)
+            st.dataframe(meta_df, width="stretch", hide_index=True)
 
         st.markdown("---")
 
@@ -579,12 +579,12 @@ def main():
                     file_name=filename,
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                     type="primary",
-                    use_container_width=True
+                    width="stretch"
                 )
 
         with col2:
             # Process another invoice
-            if st.button("🔄 Process Another Invoice", use_container_width=True):
+            if st.button("🔄 Process Another Invoice", width="stretch"):
                 reset_processing_state()
                 st.rerun()
 

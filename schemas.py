@@ -158,7 +158,14 @@ class InvoiceSchema:
     
     @staticmethod
     def get_breakthru_schema() -> Dict[str, Any]:
-        """Get Breakthru Beverage Illinois specific schema"""
+        """Get Breakthru Beverage Illinois specific schema
+
+        Note: Item should contain product codes (numbers like 9000322)
+              Description should contain product names (text)
+              Size should contain bottle sizes (375ML, 750ML, etc.)
+              BPC should contain bottles per case (24, 48, 12)
+              ext_w_o_tax is the underscore version of ext_w/o_tax
+        """
         return {
             "vendor_name": "string",
             "vendor_address": "string",
@@ -166,7 +173,7 @@ class InvoiceSchema:
             "invoice_number": "string",
             "customer_number": "string",
             "route": "string|null",
-            "stop": "number|null",
+            "stop": "string|null",  # Changed from number to string for consistency
             "terms": "string|null",
             "license": "string|null",
             "exp_date": "string|null",
@@ -176,7 +183,6 @@ class InvoiceSchema:
             "due_date": "string|null",
             "po_number": "string|null",
             "special_instructions": "string|null",
-            "barcode": "string|null",
             "total_bottles": "number|null",
             "total_liquor_gallons": "number|null",
             "total_beer_gallons": "number|null",
@@ -186,16 +192,17 @@ class InvoiceSchema:
             "items": [
                 {
                     "Case": "number|null",
-                    "Item": "string|null",
-                    "Size": "string|null",
-                    "BPC": "string|null",
-                    "Description": "string",
+                    "Btles": "string|null",  # Usually "None", only populated if specified
+                    "Item": "string|null",    # Product code (e.g., "9000322")
+                    "Size": "string|null",    # Bottle size (e.g., "375ML", "750ML", "1L")
+                    "BPC": "string|null",     # Bottles per case (e.g., "24", "48", "12")
+                    "Description": "string",  # Product name (e.g., "CROWN ROYAL 80")
                     "cs_price": "number|null",
                     "cs_disc": "number|null",
                     "cs_net": "number|null",
                     "cnty_tax": "number|null",
                     "city_tax": "number|null",
-                    "ext_w/o_tax": "number|null",
+                    "ext_w_o_tax": "number|null",  # Changed from ext_w/o_tax to match prompt
                     "slp": "string|null",
                     "deal": "string|null"
                 }
