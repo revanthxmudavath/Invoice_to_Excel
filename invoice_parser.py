@@ -157,12 +157,27 @@ class InvoiceParser:
     
     def _fix_json_response(self, response: str) -> str:
         """Attempt to fix common JSON response issues"""
+        # Fix extremely long barcode strings that break JSON parsing
+        import re
+        # Find barcode fields with excessive length (more than 100 chars)
+        barcode_pattern = r'"barcode"\s*:\s*"([0-9]{100,})"?'
+
+        def truncate_barcode(match):
+            barcode_value = match.group(1)[:20]  # Take only first 20 characters
+            return f'"barcode": "{barcode_value}"'
+
+        response = re.sub(barcode_pattern, truncate_barcode, response)
+
+        # Also fix unterminated barcode strings
+        unterminated_barcode = r'"barcode"\s*:\s*"([0-9]{100,})$'
+        response = re.sub(unterminated_barcode, lambda m: f'"barcode": "{m.group(1)[:20]}"', response)
+
         # If response is truncated, try to close it properly
         if response.count('{') > response.count('}'):
             # Add missing closing braces
             missing_braces = response.count('{') - response.count('}')
             response += '}' * missing_braces
-        
+
         # Handle truncated strings (common with long barcodes)
         if '"' in response:
             # Find the last complete field

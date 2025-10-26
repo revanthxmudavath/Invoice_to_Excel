@@ -165,7 +165,12 @@ class InvoiceValidator:
             # Convert numeric item fields
             numeric_item_fields = [
                 "qty", "bottles", "cases", "unit_price", "discount",
-                "extended_amount", "net_amount", "deposit"
+                "extended_amount", "net_amount", "deposit",
+                # Breakthru specific fields
+                "Case", "cs_price", "cs_disc", "cs_net", "cnty_tax",
+                "city_tax", "ext_w_o_tax", "ext_w/o_tax",
+                # Southern Glazers specific fields
+                "net_bottle_price", "unit_discount"
             ]
 
             for field in numeric_item_fields:

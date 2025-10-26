@@ -1,0 +1,21 @@
+# Exclude development artifacts and secrets
+.venv
+venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.DS_Store
+.env
+.git
+.gitignore
+
+# Outputs and large local files
+output/
+raw_openai_response.txt
+invoice_parser.log
+f1.png
+f2.png
+f3.png
+

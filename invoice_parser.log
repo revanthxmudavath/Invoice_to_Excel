@@ -2743,3 +2743,1727 @@ openai.APIConnectionError: Connection error.
 2025-10-13 12:28:04 - root - INFO - Log file: invoice_parser.log
 2025-10-13 12:28:04 - root - INFO - Timestamp: 2025-10-13T12:28:04.720739
 2025-10-13 12:28:04 - root - INFO - ============================================================
+2025-10-17 21:31:22 - root - INFO - ============================================================
+2025-10-17 21:31:22 - root - INFO - Invoice Parser Application Started
+2025-10-17 21:31:22 - root - INFO - Log level: INFO
+2025-10-17 21:31:22 - root - INFO - Log file: invoice_parser.log
+2025-10-17 21:31:22 - root - INFO - Timestamp: 2025-10-17T21:31:22.362389
+2025-10-17 21:31:22 - root - INFO - ============================================================
+2025-10-17 22:00:16 - root - INFO - ============================================================
+2025-10-17 22:00:16 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:00:16 - root - INFO - Log level: INFO
+2025-10-17 22:00:16 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:00:16 - root - INFO - Timestamp: 2025-10-17T22:00:16.866039
+2025-10-17 22:00:16 - root - INFO - ============================================================
+2025-10-17 22:01:51 - root - INFO - ============================================================
+2025-10-17 22:01:51 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:01:51 - root - INFO - Log level: INFO
+2025-10-17 22:01:51 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:01:51 - root - INFO - Timestamp: 2025-10-17T22:01:51.983079
+2025-10-17 22:01:51 - root - INFO - ============================================================
+2025-10-17 22:01:52 - root - INFO - ============================================================
+2025-10-17 22:01:52 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:01:52 - root - INFO - Log level: INFO
+2025-10-17 22:01:52 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:01:52 - root - INFO - Timestamp: 2025-10-17T22:01:52.642449
+2025-10-17 22:01:52 - root - INFO - ============================================================
+2025-10-17 22:01:52 - root - INFO - ============================================================
+2025-10-17 22:01:52 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:01:52 - root - INFO - Log level: INFO
+2025-10-17 22:01:52 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:01:52 - root - INFO - Timestamp: 2025-10-17T22:01:52.740282
+2025-10-17 22:01:52 - root - INFO - ============================================================
+2025-10-17 22:01:54 - root - INFO - ============================================================
+2025-10-17 22:01:54 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:01:54 - root - INFO - Log level: INFO
+2025-10-17 22:01:54 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:01:54 - root - INFO - Timestamp: 2025-10-17T22:01:54.517228
+2025-10-17 22:01:54 - root - INFO - ============================================================
+2025-10-17 22:02:05 - root - INFO - ============================================================
+2025-10-17 22:02:05 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:02:05 - root - INFO - Log level: INFO
+2025-10-17 22:02:05 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:02:05 - root - INFO - Timestamp: 2025-10-17T22:02:05.351891
+2025-10-17 22:02:05 - root - INFO - ============================================================
+2025-10-17 22:02:08 - root - INFO - ============================================================
+2025-10-17 22:02:08 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:02:08 - root - INFO - Log level: INFO
+2025-10-17 22:02:08 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:02:08 - root - INFO - Timestamp: 2025-10-17T22:02:08.397789
+2025-10-17 22:02:08 - root - INFO - ============================================================
+2025-10-17 22:02:08 - __main__ - INFO - Processing invoice: f1.png for vendor: lakeshore
+2025-10-17 22:02:09 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmp1izx52mu.png for vendor lakeshore
+2025-10-17 22:02:09 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmp1izx52mu.png
+2025-10-17 22:02:09 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmp1izx52mu.png
+2025-10-17 22:02:09 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 22:02:09 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 22:02:28 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 22:02:28 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 22:02:28 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 22:02:28 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 22:02:28 - invoice_parser - INFO - Successfully parsed invoice with 8 items
+2025-10-17 22:02:28 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 22:02:28 - excel_exporter - INFO - Starting Excel export for invoice: 125504
+2025-10-17 22:02:28 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 22:02:28 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 22:02:28 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 22:02:28 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 22:02:28 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmpd30tsfe5.xlsx
+2025-10-17 22:02:28 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmpd30tsfe5.xlsx
+2025-10-17 22:02:29 - root - INFO - ============================================================
+2025-10-17 22:02:29 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:02:29 - root - INFO - Log level: INFO
+2025-10-17 22:02:29 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:02:29 - root - INFO - Timestamp: 2025-10-17T22:02:29.174524
+2025-10-17 22:02:29 - root - INFO - ============================================================
+2025-10-17 22:04:56 - root - INFO - ============================================================
+2025-10-17 22:04:56 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:04:56 - root - INFO - Log level: INFO
+2025-10-17 22:04:56 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:04:56 - root - INFO - Timestamp: 2025-10-17T22:04:56.340258
+2025-10-17 22:04:56 - root - INFO - ============================================================
+2025-10-17 22:05:02 - root - INFO - ============================================================
+2025-10-17 22:05:02 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:05:02 - root - INFO - Log level: INFO
+2025-10-17 22:05:02 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:05:02 - root - INFO - Timestamp: 2025-10-17T22:05:02.738951
+2025-10-17 22:05:02 - root - INFO - ============================================================
+2025-10-17 22:05:04 - root - INFO - ============================================================
+2025-10-17 22:05:04 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:05:04 - root - INFO - Log level: INFO
+2025-10-17 22:05:04 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:05:04 - root - INFO - Timestamp: 2025-10-17T22:05:04.341919
+2025-10-17 22:05:04 - root - INFO - ============================================================
+2025-10-17 22:05:04 - root - INFO - ============================================================
+2025-10-17 22:05:04 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:05:04 - root - INFO - Log level: INFO
+2025-10-17 22:05:04 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:05:04 - root - INFO - Timestamp: 2025-10-17T22:05:04.453385
+2025-10-17 22:05:04 - root - INFO - ============================================================
+2025-10-17 22:05:07 - root - INFO - ============================================================
+2025-10-17 22:05:07 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:05:07 - root - INFO - Log level: INFO
+2025-10-17 22:05:07 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:05:07 - root - INFO - Timestamp: 2025-10-17T22:05:07.350030
+2025-10-17 22:05:07 - root - INFO - ============================================================
+2025-10-17 22:05:12 - root - INFO - ============================================================
+2025-10-17 22:05:12 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:05:12 - root - INFO - Log level: INFO
+2025-10-17 22:05:12 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:05:12 - root - INFO - Timestamp: 2025-10-17T22:05:12.723971
+2025-10-17 22:05:12 - root - INFO - ============================================================
+2025-10-17 22:05:14 - root - INFO - ============================================================
+2025-10-17 22:05:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:05:14 - root - INFO - Log level: INFO
+2025-10-17 22:05:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:05:14 - root - INFO - Timestamp: 2025-10-17T22:05:14.708530
+2025-10-17 22:05:14 - root - INFO - ============================================================
+2025-10-17 22:05:14 - __main__ - INFO - Processing invoice: f2.png for vendor: breakthru
+2025-10-17 22:05:15 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpwj2710pk.png for vendor breakthru
+2025-10-17 22:05:15 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpwj2710pk.png
+2025-10-17 22:05:15 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpwj2710pk.png
+2025-10-17 22:05:15 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 22:05:15 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 22:06:01 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 22:06:01 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 22:06:01 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 22:06:01 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 22:06:02 - invoice_parser - INFO - Successfully parsed invoice with 16 items
+2025-10-17 22:06:02 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 22:06:02 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 22:06:02 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 22:06:02 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 22:06:02 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 22:06:02 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 22:06:02 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp4ef423n9.xlsx
+2025-10-17 22:06:02 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp4ef423n9.xlsx
+2025-10-17 22:06:03 - root - INFO - ============================================================
+2025-10-17 22:06:03 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:06:03 - root - INFO - Log level: INFO
+2025-10-17 22:06:03 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:06:03 - root - INFO - Timestamp: 2025-10-17T22:06:03.341202
+2025-10-17 22:06:03 - root - INFO - ============================================================
+2025-10-17 22:06:18 - root - INFO - ============================================================
+2025-10-17 22:06:18 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:06:18 - root - INFO - Log level: INFO
+2025-10-17 22:06:18 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:06:18 - root - INFO - Timestamp: 2025-10-17T22:06:18.982603
+2025-10-17 22:06:18 - root - INFO - ============================================================
+2025-10-17 22:10:56 - root - INFO - ============================================================
+2025-10-17 22:10:56 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:10:56 - root - INFO - Log level: INFO
+2025-10-17 22:10:56 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:10:56 - root - INFO - Timestamp: 2025-10-17T22:10:56.944666
+2025-10-17 22:10:56 - root - INFO - ============================================================
+2025-10-17 22:11:01 - root - INFO - ============================================================
+2025-10-17 22:11:01 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:11:01 - root - INFO - Log level: INFO
+2025-10-17 22:11:01 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:11:01 - root - INFO - Timestamp: 2025-10-17T22:11:01.351708
+2025-10-17 22:11:01 - root - INFO - ============================================================
+2025-10-17 22:11:02 - root - INFO - ============================================================
+2025-10-17 22:11:02 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:11:02 - root - INFO - Log level: INFO
+2025-10-17 22:11:02 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:11:02 - root - INFO - Timestamp: 2025-10-17T22:11:02.410798
+2025-10-17 22:11:02 - root - INFO - ============================================================
+2025-10-17 22:11:02 - root - INFO - ============================================================
+2025-10-17 22:11:02 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:11:02 - root - INFO - Log level: INFO
+2025-10-17 22:11:02 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:11:02 - root - INFO - Timestamp: 2025-10-17T22:11:02.515331
+2025-10-17 22:11:02 - root - INFO - ============================================================
+2025-10-17 22:11:03 - root - INFO - ============================================================
+2025-10-17 22:11:03 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:11:03 - root - INFO - Log level: INFO
+2025-10-17 22:11:03 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:11:03 - root - INFO - Timestamp: 2025-10-17T22:11:03.678499
+2025-10-17 22:11:03 - root - INFO - ============================================================
+2025-10-17 22:11:14 - root - INFO - ============================================================
+2025-10-17 22:11:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:11:14 - root - INFO - Log level: INFO
+2025-10-17 22:11:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:11:14 - root - INFO - Timestamp: 2025-10-17T22:11:14.881638
+2025-10-17 22:11:14 - root - INFO - ============================================================
+2025-10-17 22:11:16 - root - INFO - ============================================================
+2025-10-17 22:11:16 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:11:16 - root - INFO - Log level: INFO
+2025-10-17 22:11:16 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:11:16 - root - INFO - Timestamp: 2025-10-17T22:11:16.815682
+2025-10-17 22:11:16 - root - INFO - ============================================================
+2025-10-17 22:11:16 - __main__ - INFO - Processing invoice: f2.png for vendor: breakthru
+2025-10-17 22:11:17 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpxw1ovt6i.png for vendor breakthru
+2025-10-17 22:11:17 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpxw1ovt6i.png
+2025-10-17 22:11:17 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpxw1ovt6i.png
+2025-10-17 22:11:17 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 22:11:18 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 22:12:00 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 22:12:00 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 22:12:00 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 22:12:00 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 22:12:00 - invoice_parser - INFO - Successfully parsed invoice with 18 items
+2025-10-17 22:12:00 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 22:12:00 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 22:12:00 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 22:12:00 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 22:12:00 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 22:12:00 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 22:12:00 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp_7r9kcgc.xlsx
+2025-10-17 22:12:00 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp_7r9kcgc.xlsx
+2025-10-17 22:12:00 - root - INFO - ============================================================
+2025-10-17 22:12:00 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:12:00 - root - INFO - Log level: INFO
+2025-10-17 22:12:00 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:12:00 - root - INFO - Timestamp: 2025-10-17T22:12:00.826172
+2025-10-17 22:12:00 - root - INFO - ============================================================
+2025-10-17 22:16:06 - root - INFO - ============================================================
+2025-10-17 22:16:06 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:16:06 - root - INFO - Log level: INFO
+2025-10-17 22:16:06 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:16:06 - root - INFO - Timestamp: 2025-10-17T22:16:06.208102
+2025-10-17 22:16:06 - root - INFO - ============================================================
+2025-10-17 22:16:10 - root - INFO - ============================================================
+2025-10-17 22:16:10 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:16:10 - root - INFO - Log level: INFO
+2025-10-17 22:16:10 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:16:10 - root - INFO - Timestamp: 2025-10-17T22:16:10.684464
+2025-10-17 22:16:10 - root - INFO - ============================================================
+2025-10-17 22:16:11 - root - INFO - ============================================================
+2025-10-17 22:16:11 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:16:11 - root - INFO - Log level: INFO
+2025-10-17 22:16:11 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:16:11 - root - INFO - Timestamp: 2025-10-17T22:16:11.817872
+2025-10-17 22:16:11 - root - INFO - ============================================================
+2025-10-17 22:16:11 - root - INFO - ============================================================
+2025-10-17 22:16:11 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:16:11 - root - INFO - Log level: INFO
+2025-10-17 22:16:11 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:16:11 - root - INFO - Timestamp: 2025-10-17T22:16:11.955859
+2025-10-17 22:16:11 - root - INFO - ============================================================
+2025-10-17 22:16:13 - root - INFO - ============================================================
+2025-10-17 22:16:13 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:16:13 - root - INFO - Log level: INFO
+2025-10-17 22:16:13 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:16:13 - root - INFO - Timestamp: 2025-10-17T22:16:13.088750
+2025-10-17 22:16:13 - root - INFO - ============================================================
+2025-10-17 22:16:23 - root - INFO - ============================================================
+2025-10-17 22:16:23 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:16:23 - root - INFO - Log level: INFO
+2025-10-17 22:16:23 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:16:23 - root - INFO - Timestamp: 2025-10-17T22:16:23.908663
+2025-10-17 22:16:23 - root - INFO - ============================================================
+2025-10-17 22:16:25 - root - INFO - ============================================================
+2025-10-17 22:16:25 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:16:25 - root - INFO - Log level: INFO
+2025-10-17 22:16:25 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:16:25 - root - INFO - Timestamp: 2025-10-17T22:16:25.743666
+2025-10-17 22:16:25 - root - INFO - ============================================================
+2025-10-17 22:16:25 - __main__ - INFO - Processing invoice: f2.png for vendor: breakthru
+2025-10-17 22:16:26 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpiurjg3j3.png for vendor breakthru
+2025-10-17 22:16:26 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpiurjg3j3.png
+2025-10-17 22:16:26 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpiurjg3j3.png
+2025-10-17 22:16:26 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 22:16:26 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 22:17:01 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 22:17:01 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 22:17:01 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 22:17:01 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 22:17:01 - invoice_parser - INFO - Successfully parsed invoice with 17 items
+2025-10-17 22:17:01 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 22:17:01 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 22:17:01 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 22:17:01 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 22:17:01 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 22:17:01 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 22:17:01 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp44py9n7v.xlsx
+2025-10-17 22:17:01 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp44py9n7v.xlsx
+2025-10-17 22:17:02 - root - INFO - ============================================================
+2025-10-17 22:17:02 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:17:02 - root - INFO - Log level: INFO
+2025-10-17 22:17:02 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:17:02 - root - INFO - Timestamp: 2025-10-17T22:17:02.048272
+2025-10-17 22:17:02 - root - INFO - ============================================================
+2025-10-17 22:27:09 - root - INFO - ============================================================
+2025-10-17 22:27:09 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:27:09 - root - INFO - Log level: INFO
+2025-10-17 22:27:09 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:27:09 - root - INFO - Timestamp: 2025-10-17T22:27:09.756333
+2025-10-17 22:27:09 - root - INFO - ============================================================
+2025-10-17 22:27:14 - root - INFO - ============================================================
+2025-10-17 22:27:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:27:14 - root - INFO - Log level: INFO
+2025-10-17 22:27:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:27:14 - root - INFO - Timestamp: 2025-10-17T22:27:14.893133
+2025-10-17 22:27:14 - root - INFO - ============================================================
+2025-10-17 22:27:16 - root - INFO - ============================================================
+2025-10-17 22:27:16 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:27:17 - root - INFO - Log level: INFO
+2025-10-17 22:27:17 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:27:17 - root - INFO - Timestamp: 2025-10-17T22:27:17.010289
+2025-10-17 22:27:17 - root - INFO - ============================================================
+2025-10-17 22:27:17 - root - INFO - ============================================================
+2025-10-17 22:27:17 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:27:17 - root - INFO - Log level: INFO
+2025-10-17 22:27:17 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:27:17 - root - INFO - Timestamp: 2025-10-17T22:27:17.086961
+2025-10-17 22:27:17 - root - INFO - ============================================================
+2025-10-17 22:27:18 - root - INFO - ============================================================
+2025-10-17 22:27:18 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:27:18 - root - INFO - Log level: INFO
+2025-10-17 22:27:18 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:27:18 - root - INFO - Timestamp: 2025-10-17T22:27:18.256896
+2025-10-17 22:27:18 - root - INFO - ============================================================
+2025-10-17 22:27:28 - root - INFO - ============================================================
+2025-10-17 22:27:28 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:27:28 - root - INFO - Log level: INFO
+2025-10-17 22:27:28 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:27:28 - root - INFO - Timestamp: 2025-10-17T22:27:28.253254
+2025-10-17 22:27:28 - root - INFO - ============================================================
+2025-10-17 22:27:29 - root - INFO - ============================================================
+2025-10-17 22:27:29 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:27:29 - root - INFO - Log level: INFO
+2025-10-17 22:27:29 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:27:29 - root - INFO - Timestamp: 2025-10-17T22:27:29.360969
+2025-10-17 22:27:29 - root - INFO - ============================================================
+2025-10-17 22:27:29 - __main__ - INFO - Processing invoice: f2.png for vendor: breakthru
+2025-10-17 22:27:30 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpbrcyxabd.png for vendor breakthru
+2025-10-17 22:27:30 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpbrcyxabd.png
+2025-10-17 22:27:30 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpbrcyxabd.png
+2025-10-17 22:27:30 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 22:27:30 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 22:28:13 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 22:28:13 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 22:28:13 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 22:28:13 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 22:28:13 - invoice_parser - INFO - Successfully parsed invoice with 18 items
+2025-10-17 22:28:13 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 22:28:13 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 22:28:13 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 22:28:13 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 22:28:13 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 22:28:13 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 22:28:13 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmpdhfftvta.xlsx
+2025-10-17 22:28:13 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmpdhfftvta.xlsx
+2025-10-17 22:28:13 - root - INFO - ============================================================
+2025-10-17 22:28:13 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:28:13 - root - INFO - Log level: INFO
+2025-10-17 22:28:13 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:28:13 - root - INFO - Timestamp: 2025-10-17T22:28:13.398686
+2025-10-17 22:28:13 - root - INFO - ============================================================
+2025-10-17 22:47:07 - root - INFO - ============================================================
+2025-10-17 22:47:07 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:47:07 - root - INFO - Log level: INFO
+2025-10-17 22:47:07 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:47:07 - root - INFO - Timestamp: 2025-10-17T22:47:07.216116
+2025-10-17 22:47:07 - root - INFO - ============================================================
+2025-10-17 22:47:25 - root - INFO - ============================================================
+2025-10-17 22:47:25 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:47:25 - root - INFO - Log level: INFO
+2025-10-17 22:47:25 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:47:25 - root - INFO - Timestamp: 2025-10-17T22:47:25.672188
+2025-10-17 22:47:25 - root - INFO - ============================================================
+2025-10-17 22:47:26 - root - INFO - ============================================================
+2025-10-17 22:47:26 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:47:26 - root - INFO - Log level: INFO
+2025-10-17 22:47:26 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:47:26 - root - INFO - Timestamp: 2025-10-17T22:47:26.366417
+2025-10-17 22:47:26 - root - INFO - ============================================================
+2025-10-17 22:47:26 - root - INFO - ============================================================
+2025-10-17 22:47:26 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:47:26 - root - INFO - Log level: INFO
+2025-10-17 22:47:26 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:47:26 - root - INFO - Timestamp: 2025-10-17T22:47:26.460712
+2025-10-17 22:47:26 - root - INFO - ============================================================
+2025-10-17 22:47:27 - root - INFO - ============================================================
+2025-10-17 22:47:27 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:47:27 - root - INFO - Log level: INFO
+2025-10-17 22:47:27 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:47:27 - root - INFO - Timestamp: 2025-10-17T22:47:27.621627
+2025-10-17 22:47:27 - root - INFO - ============================================================
+2025-10-17 22:47:36 - root - INFO - ============================================================
+2025-10-17 22:47:36 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:47:36 - root - INFO - Log level: INFO
+2025-10-17 22:47:36 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:47:36 - root - INFO - Timestamp: 2025-10-17T22:47:36.849800
+2025-10-17 22:47:36 - root - INFO - ============================================================
+2025-10-17 22:47:40 - root - INFO - ============================================================
+2025-10-17 22:47:40 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:47:40 - root - INFO - Log level: INFO
+2025-10-17 22:47:40 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:47:40 - root - INFO - Timestamp: 2025-10-17T22:47:40.408996
+2025-10-17 22:47:40 - root - INFO - ============================================================
+2025-10-17 22:47:40 - __main__ - INFO - Processing invoice: f2.png for vendor: breakthru
+2025-10-17 22:47:41 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpr8btzs8v.png for vendor breakthru
+2025-10-17 22:47:41 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpr8btzs8v.png
+2025-10-17 22:47:41 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpr8btzs8v.png
+2025-10-17 22:47:41 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 22:47:41 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 22:48:25 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 22:48:25 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 22:48:25 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 22:48:25 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 22:48:25 - invoice_parser - INFO - Successfully parsed invoice with 0 items
+2025-10-17 22:48:25 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 22:48:25 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 22:48:25 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 22:48:25 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 22:48:25 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 22:48:25 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 22:48:25 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp6d_d558x.xlsx
+2025-10-17 22:48:25 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp6d_d558x.xlsx
+2025-10-17 22:48:25 - root - INFO - ============================================================
+2025-10-17 22:48:25 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:48:25 - root - INFO - Log level: INFO
+2025-10-17 22:48:25 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:48:25 - root - INFO - Timestamp: 2025-10-17T22:48:25.318031
+2025-10-17 22:48:25 - root - INFO - ============================================================
+2025-10-17 22:56:07 - root - INFO - ============================================================
+2025-10-17 22:56:07 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:56:07 - root - INFO - Log level: INFO
+2025-10-17 22:56:07 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:56:07 - root - INFO - Timestamp: 2025-10-17T22:56:07.312241
+2025-10-17 22:56:07 - root - INFO - ============================================================
+2025-10-17 22:56:12 - root - INFO - ============================================================
+2025-10-17 22:56:13 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:56:13 - root - INFO - Log level: INFO
+2025-10-17 22:56:13 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:56:13 - root - INFO - Timestamp: 2025-10-17T22:56:13.015604
+2025-10-17 22:56:13 - root - INFO - ============================================================
+2025-10-17 22:56:14 - root - INFO - ============================================================
+2025-10-17 22:56:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:56:14 - root - INFO - Log level: INFO
+2025-10-17 22:56:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:56:14 - root - INFO - Timestamp: 2025-10-17T22:56:14.678158
+2025-10-17 22:56:14 - root - INFO - ============================================================
+2025-10-17 22:56:14 - root - INFO - ============================================================
+2025-10-17 22:56:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:56:14 - root - INFO - Log level: INFO
+2025-10-17 22:56:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:56:14 - root - INFO - Timestamp: 2025-10-17T22:56:14.822123
+2025-10-17 22:56:14 - root - INFO - ============================================================
+2025-10-17 22:56:16 - root - INFO - ============================================================
+2025-10-17 22:56:16 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:56:16 - root - INFO - Log level: INFO
+2025-10-17 22:56:16 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:56:16 - root - INFO - Timestamp: 2025-10-17T22:56:16.607105
+2025-10-17 22:56:16 - root - INFO - ============================================================
+2025-10-17 22:56:30 - root - INFO - ============================================================
+2025-10-17 22:56:30 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:56:30 - root - INFO - Log level: INFO
+2025-10-17 22:56:30 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:56:30 - root - INFO - Timestamp: 2025-10-17T22:56:30.709262
+2025-10-17 22:56:30 - root - INFO - ============================================================
+2025-10-17 22:56:33 - root - INFO - ============================================================
+2025-10-17 22:56:33 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:56:33 - root - INFO - Log level: INFO
+2025-10-17 22:56:33 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:56:33 - root - INFO - Timestamp: 2025-10-17T22:56:33.732481
+2025-10-17 22:56:33 - root - INFO - ============================================================
+2025-10-17 22:56:33 - __main__ - INFO - Processing invoice: f2.png for vendor: breakthru
+2025-10-17 22:56:34 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpxyubz6wa.png for vendor breakthru
+2025-10-17 22:56:34 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpxyubz6wa.png
+2025-10-17 22:56:34 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpxyubz6wa.png
+2025-10-17 22:56:34 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 22:56:34 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 22:57:05 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 22:57:05 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 22:57:05 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 22:57:05 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 22:57:05 - invoice_parser - INFO - Successfully parsed invoice with 18 items
+2025-10-17 22:57:05 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 22:57:05 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 22:57:05 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 22:57:05 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 22:57:05 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 22:57:05 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 22:57:05 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmpvzce7v4y.xlsx
+2025-10-17 22:57:05 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmpvzce7v4y.xlsx
+2025-10-17 22:57:05 - root - INFO - ============================================================
+2025-10-17 22:57:05 - root - INFO - Invoice Parser Application Started
+2025-10-17 22:57:05 - root - INFO - Log level: INFO
+2025-10-17 22:57:05 - root - INFO - Log file: invoice_parser.log
+2025-10-17 22:57:05 - root - INFO - Timestamp: 2025-10-17T22:57:05.907827
+2025-10-17 22:57:05 - root - INFO - ============================================================
+2025-10-17 23:03:58 - root - INFO - ============================================================
+2025-10-17 23:03:58 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:03:58 - root - INFO - Log level: INFO
+2025-10-17 23:03:58 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:03:58 - root - INFO - Timestamp: 2025-10-17T23:03:58.020146
+2025-10-17 23:03:58 - root - INFO - ============================================================
+2025-10-17 23:04:12 - root - INFO - ============================================================
+2025-10-17 23:04:12 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:04:12 - root - INFO - Log level: INFO
+2025-10-17 23:04:12 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:04:12 - root - INFO - Timestamp: 2025-10-17T23:04:12.952270
+2025-10-17 23:04:12 - root - INFO - ============================================================
+2025-10-17 23:04:14 - root - INFO - ============================================================
+2025-10-17 23:04:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:04:14 - root - INFO - Log level: INFO
+2025-10-17 23:04:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:04:14 - root - INFO - Timestamp: 2025-10-17T23:04:14.015150
+2025-10-17 23:04:14 - root - INFO - ============================================================
+2025-10-17 23:04:14 - root - INFO - ============================================================
+2025-10-17 23:04:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:04:14 - root - INFO - Log level: INFO
+2025-10-17 23:04:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:04:14 - root - INFO - Timestamp: 2025-10-17T23:04:14.086451
+2025-10-17 23:04:14 - root - INFO - ============================================================
+2025-10-17 23:04:15 - root - INFO - ============================================================
+2025-10-17 23:04:15 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:04:15 - root - INFO - Log level: INFO
+2025-10-17 23:04:15 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:04:15 - root - INFO - Timestamp: 2025-10-17T23:04:15.391034
+2025-10-17 23:04:15 - root - INFO - ============================================================
+2025-10-17 23:04:27 - root - INFO - ============================================================
+2025-10-17 23:04:27 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:04:27 - root - INFO - Log level: INFO
+2025-10-17 23:04:27 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:04:27 - root - INFO - Timestamp: 2025-10-17T23:04:27.526663
+2025-10-17 23:04:27 - root - INFO - ============================================================
+2025-10-17 23:04:30 - root - INFO - ============================================================
+2025-10-17 23:04:30 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:04:30 - root - INFO - Log level: INFO
+2025-10-17 23:04:30 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:04:30 - root - INFO - Timestamp: 2025-10-17T23:04:30.680190
+2025-10-17 23:04:30 - root - INFO - ============================================================
+2025-10-17 23:04:30 - __main__ - INFO - Processing invoice: f2.png for vendor: breakthru
+2025-10-17 23:04:31 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpe3b5wkg7.png for vendor breakthru
+2025-10-17 23:04:31 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpe3b5wkg7.png
+2025-10-17 23:04:31 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpe3b5wkg7.png
+2025-10-17 23:04:31 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 23:04:31 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 23:05:07 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 23:05:07 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 23:05:07 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 23:05:07 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 23:05:07 - invoice_parser - INFO - Successfully parsed invoice with 16 items
+2025-10-17 23:05:07 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 23:05:07 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 23:05:07 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 23:05:07 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 23:05:07 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 23:05:07 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 23:05:07 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmpy1m_x2ln.xlsx
+2025-10-17 23:05:07 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmpy1m_x2ln.xlsx
+2025-10-17 23:05:07 - root - INFO - ============================================================
+2025-10-17 23:05:07 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:05:07 - root - INFO - Log level: INFO
+2025-10-17 23:05:07 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:05:07 - root - INFO - Timestamp: 2025-10-17T23:05:07.524592
+2025-10-17 23:05:07 - root - INFO - ============================================================
+2025-10-17 23:25:56 - root - INFO - ============================================================
+2025-10-17 23:25:56 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:25:56 - root - INFO - Log level: INFO
+2025-10-17 23:25:56 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:25:56 - root - INFO - Timestamp: 2025-10-17T23:25:56.210683
+2025-10-17 23:25:56 - root - INFO - ============================================================
+2025-10-17 23:26:13 - root - INFO - ============================================================
+2025-10-17 23:26:13 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:26:13 - root - INFO - Log level: INFO
+2025-10-17 23:26:13 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:26:13 - root - INFO - Timestamp: 2025-10-17T23:26:13.512946
+2025-10-17 23:26:13 - root - INFO - ============================================================
+2025-10-17 23:26:15 - root - INFO - ============================================================
+2025-10-17 23:26:15 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:26:15 - root - INFO - Log level: INFO
+2025-10-17 23:26:15 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:26:15 - root - INFO - Timestamp: 2025-10-17T23:26:15.465749
+2025-10-17 23:26:15 - root - INFO - ============================================================
+2025-10-17 23:26:15 - root - INFO - ============================================================
+2025-10-17 23:26:15 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:26:15 - root - INFO - Log level: INFO
+2025-10-17 23:26:15 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:26:15 - root - INFO - Timestamp: 2025-10-17T23:26:15.584809
+2025-10-17 23:26:15 - root - INFO - ============================================================
+2025-10-17 23:26:16 - root - INFO - ============================================================
+2025-10-17 23:26:16 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:26:16 - root - INFO - Log level: INFO
+2025-10-17 23:26:16 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:26:16 - root - INFO - Timestamp: 2025-10-17T23:26:16.720576
+2025-10-17 23:26:16 - root - INFO - ============================================================
+2025-10-17 23:26:21 - root - INFO - ============================================================
+2025-10-17 23:26:21 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:26:21 - root - INFO - Log level: INFO
+2025-10-17 23:26:21 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:26:21 - root - INFO - Timestamp: 2025-10-17T23:26:21.568090
+2025-10-17 23:26:21 - root - INFO - ============================================================
+2025-10-17 23:26:24 - root - INFO - ============================================================
+2025-10-17 23:26:24 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:26:24 - root - INFO - Log level: INFO
+2025-10-17 23:26:24 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:26:24 - root - INFO - Timestamp: 2025-10-17T23:26:24.376227
+2025-10-17 23:26:24 - root - INFO - ============================================================
+2025-10-17 23:26:24 - __main__ - INFO - Processing invoice: f2 (2).png for vendor: breakthru
+2025-10-17 23:26:25 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpf8vgl8ce.png for vendor breakthru
+2025-10-17 23:26:25 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpf8vgl8ce.png
+2025-10-17 23:26:25 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpf8vgl8ce.png
+2025-10-17 23:26:25 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 23:26:25 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 23:29:33 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 23:29:33 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 23:29:33 - invoice_parser - WARNING - JSON is invalid (error: Unterminated string starting at: line 1836 column 16 (char 41128)), attempting to fix...
+2025-10-17 23:29:33 - invoice_parser - INFO - Attempted fix: 41133 chars -> 41090 chars
+2025-10-17 23:29:33 - invoice_parser - INFO - Saved before/after fix files for comparison
+2025-10-17 23:29:33 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 23:29:33 - invoice_parser - INFO - Successfully parsed invoice with 113 items
+2025-10-17 23:29:33 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 23:29:33 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 23:29:33 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 23:29:33 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 23:29:33 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 23:29:33 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 23:29:33 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp6a1oqj4g.xlsx
+2025-10-17 23:29:33 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp6a1oqj4g.xlsx
+2025-10-17 23:29:34 - root - INFO - ============================================================
+2025-10-17 23:29:34 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:29:34 - root - INFO - Log level: INFO
+2025-10-17 23:29:34 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:29:34 - root - INFO - Timestamp: 2025-10-17T23:29:34.188570
+2025-10-17 23:29:34 - root - INFO - ============================================================
+2025-10-17 23:39:06 - root - INFO - ============================================================
+2025-10-17 23:39:06 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:39:06 - root - INFO - Log level: INFO
+2025-10-17 23:39:06 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:39:06 - root - INFO - Timestamp: 2025-10-17T23:39:06.287798
+2025-10-17 23:39:06 - root - INFO - ============================================================
+2025-10-17 23:39:32 - root - INFO - ============================================================
+2025-10-17 23:39:32 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:39:32 - root - INFO - Log level: INFO
+2025-10-17 23:39:32 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:39:32 - root - INFO - Timestamp: 2025-10-17T23:39:32.059820
+2025-10-17 23:39:32 - root - INFO - ============================================================
+2025-10-17 23:39:33 - root - INFO - ============================================================
+2025-10-17 23:39:33 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:39:33 - root - INFO - Log level: INFO
+2025-10-17 23:39:33 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:39:33 - root - INFO - Timestamp: 2025-10-17T23:39:33.597564
+2025-10-17 23:39:33 - root - INFO - ============================================================
+2025-10-17 23:39:33 - root - INFO - ============================================================
+2025-10-17 23:39:33 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:39:33 - root - INFO - Log level: INFO
+2025-10-17 23:39:33 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:39:33 - root - INFO - Timestamp: 2025-10-17T23:39:33.688970
+2025-10-17 23:39:33 - root - INFO - ============================================================
+2025-10-17 23:39:35 - root - INFO - ============================================================
+2025-10-17 23:39:35 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:39:35 - root - INFO - Log level: INFO
+2025-10-17 23:39:35 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:39:35 - root - INFO - Timestamp: 2025-10-17T23:39:35.067319
+2025-10-17 23:39:35 - root - INFO - ============================================================
+2025-10-17 23:39:40 - root - INFO - ============================================================
+2025-10-17 23:39:40 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:39:40 - root - INFO - Log level: INFO
+2025-10-17 23:39:40 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:39:40 - root - INFO - Timestamp: 2025-10-17T23:39:40.091162
+2025-10-17 23:39:40 - root - INFO - ============================================================
+2025-10-17 23:39:42 - root - INFO - ============================================================
+2025-10-17 23:39:42 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:39:42 - root - INFO - Log level: INFO
+2025-10-17 23:39:42 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:39:42 - root - INFO - Timestamp: 2025-10-17T23:39:42.672750
+2025-10-17 23:39:42 - root - INFO - ============================================================
+2025-10-17 23:39:42 - __main__ - INFO - Processing invoice: f2 (2).png for vendor: breakthru
+2025-10-17 23:39:43 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpy5zsta0y.png for vendor breakthru
+2025-10-17 23:39:43 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpy5zsta0y.png
+2025-10-17 23:39:43 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpy5zsta0y.png
+2025-10-17 23:39:43 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 23:39:43 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 23:43:13 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 23:43:13 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 23:43:13 - invoice_parser - WARNING - JSON is invalid (error: Unterminated string starting at: line 18 column 14 (char 529)), attempting to fix...
+2025-10-17 23:43:13 - invoice_parser - INFO - Attempted fix: 47942 chars -> 531 chars
+2025-10-17 23:43:13 - invoice_parser - INFO - Saved before/after fix files for comparison
+2025-10-17 23:43:13 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 23:43:13 - invoice_parser - INFO - Successfully parsed invoice with 0 items
+2025-10-17 23:43:13 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 23:43:13 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 23:43:13 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 23:43:13 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 23:43:13 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 23:43:13 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 23:43:14 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp1hrb0l0n.xlsx
+2025-10-17 23:43:14 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp1hrb0l0n.xlsx
+2025-10-17 23:43:14 - root - INFO - ============================================================
+2025-10-17 23:43:14 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:43:14 - root - INFO - Log level: INFO
+2025-10-17 23:43:14 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:43:14 - root - INFO - Timestamp: 2025-10-17T23:43:14.146838
+2025-10-17 23:43:14 - root - INFO - ============================================================
+2025-10-17 23:55:32 - root - INFO - ============================================================
+2025-10-17 23:55:32 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:55:32 - root - INFO - Log level: INFO
+2025-10-17 23:55:32 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:55:32 - root - INFO - Timestamp: 2025-10-17T23:55:32.790748
+2025-10-17 23:55:32 - root - INFO - ============================================================
+2025-10-17 23:55:35 - root - INFO - ============================================================
+2025-10-17 23:55:35 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:55:35 - root - INFO - Log level: INFO
+2025-10-17 23:55:35 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:55:35 - root - INFO - Timestamp: 2025-10-17T23:55:35.943813
+2025-10-17 23:55:35 - root - INFO - ============================================================
+2025-10-17 23:55:36 - root - INFO - ============================================================
+2025-10-17 23:55:36 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:55:36 - root - INFO - Log level: INFO
+2025-10-17 23:55:36 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:55:36 - root - INFO - Timestamp: 2025-10-17T23:55:36.696861
+2025-10-17 23:55:36 - root - INFO - ============================================================
+2025-10-17 23:55:36 - root - INFO - ============================================================
+2025-10-17 23:55:36 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:55:36 - root - INFO - Log level: INFO
+2025-10-17 23:55:36 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:55:36 - root - INFO - Timestamp: 2025-10-17T23:55:36.799378
+2025-10-17 23:55:36 - root - INFO - ============================================================
+2025-10-17 23:55:38 - root - INFO - ============================================================
+2025-10-17 23:55:38 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:55:38 - root - INFO - Log level: INFO
+2025-10-17 23:55:38 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:55:38 - root - INFO - Timestamp: 2025-10-17T23:55:38.655818
+2025-10-17 23:55:38 - root - INFO - ============================================================
+2025-10-17 23:55:43 - root - INFO - ============================================================
+2025-10-17 23:55:43 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:55:43 - root - INFO - Log level: INFO
+2025-10-17 23:55:43 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:55:43 - root - INFO - Timestamp: 2025-10-17T23:55:43.225637
+2025-10-17 23:55:43 - root - INFO - ============================================================
+2025-10-17 23:55:45 - root - INFO - ============================================================
+2025-10-17 23:55:45 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:55:45 - root - INFO - Log level: INFO
+2025-10-17 23:55:45 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:55:45 - root - INFO - Timestamp: 2025-10-17T23:55:45.922360
+2025-10-17 23:55:45 - root - INFO - ============================================================
+2025-10-17 23:55:46 - __main__ - INFO - Processing invoice: f2 (2).png for vendor: breakthru
+2025-10-17 23:55:46 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmp0cc7euhw.png for vendor breakthru
+2025-10-17 23:55:46 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmp0cc7euhw.png
+2025-10-17 23:55:46 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmp0cc7euhw.png
+2025-10-17 23:55:46 - invoice_parser - INFO - Processed file into 1 images
+2025-10-17 23:55:47 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-17 23:56:23 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-17 23:56:23 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-17 23:56:23 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-17 23:56:23 - validators - INFO - Data processing complete. No validation flags.
+2025-10-17 23:56:23 - invoice_parser - INFO - Successfully parsed invoice with 17 items
+2025-10-17 23:56:23 - __main__ - INFO - Invoice parsed successfully
+2025-10-17 23:56:23 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-17 23:56:23 - excel_exporter - INFO - Creating summary sheet...
+2025-10-17 23:56:23 - excel_exporter - INFO - Creating items sheet...
+2025-10-17 23:56:23 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-17 23:56:23 - excel_exporter - INFO - Creating validation sheet...
+2025-10-17 23:56:23 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmpn8rn4zgx.xlsx
+2025-10-17 23:56:23 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmpn8rn4zgx.xlsx
+2025-10-17 23:56:24 - root - INFO - ============================================================
+2025-10-17 23:56:24 - root - INFO - Invoice Parser Application Started
+2025-10-17 23:56:24 - root - INFO - Log level: INFO
+2025-10-17 23:56:24 - root - INFO - Log file: invoice_parser.log
+2025-10-17 23:56:24 - root - INFO - Timestamp: 2025-10-17T23:56:24.261993
+2025-10-17 23:56:24 - root - INFO - ============================================================
+2025-10-18 00:07:09 - root - INFO - ============================================================
+2025-10-18 00:07:09 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:07:09 - root - INFO - Log level: INFO
+2025-10-18 00:07:09 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:07:09 - root - INFO - Timestamp: 2025-10-18T00:07:09.972951
+2025-10-18 00:07:09 - root - INFO - ============================================================
+2025-10-18 00:07:25 - root - INFO - ============================================================
+2025-10-18 00:07:25 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:07:25 - root - INFO - Log level: INFO
+2025-10-18 00:07:25 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:07:25 - root - INFO - Timestamp: 2025-10-18T00:07:25.166533
+2025-10-18 00:07:25 - root - INFO - ============================================================
+2025-10-18 00:07:25 - root - INFO - ============================================================
+2025-10-18 00:07:25 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:07:25 - root - INFO - Log level: INFO
+2025-10-18 00:07:25 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:07:25 - root - INFO - Timestamp: 2025-10-18T00:07:25.298806
+2025-10-18 00:07:25 - root - INFO - ============================================================
+2025-10-18 00:07:25 - root - INFO - ============================================================
+2025-10-18 00:07:25 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:07:25 - root - INFO - Log level: INFO
+2025-10-18 00:07:25 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:07:25 - root - INFO - Timestamp: 2025-10-18T00:07:25.412321
+2025-10-18 00:07:25 - root - INFO - ============================================================
+2025-10-18 00:07:26 - root - INFO - ============================================================
+2025-10-18 00:07:26 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:07:26 - root - INFO - Log level: INFO
+2025-10-18 00:07:26 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:07:26 - root - INFO - Timestamp: 2025-10-18T00:07:26.637450
+2025-10-18 00:07:26 - root - INFO - ============================================================
+2025-10-18 00:07:32 - root - INFO - ============================================================
+2025-10-18 00:07:32 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:07:32 - root - INFO - Log level: INFO
+2025-10-18 00:07:32 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:07:32 - root - INFO - Timestamp: 2025-10-18T00:07:32.688361
+2025-10-18 00:07:32 - root - INFO - ============================================================
+2025-10-18 00:07:35 - root - INFO - ============================================================
+2025-10-18 00:07:35 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:07:35 - root - INFO - Log level: INFO
+2025-10-18 00:07:35 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:07:35 - root - INFO - Timestamp: 2025-10-18T00:07:35.567268
+2025-10-18 00:07:35 - root - INFO - ============================================================
+2025-10-18 00:07:36 - __main__ - INFO - Processing invoice: f2 (1).png for vendor: breakthru
+2025-10-18 00:07:37 - __main__ - ERROR - Error processing invoice: File too large: 10.5MB. Maximum allowed: 10MB
+2025-10-18 00:07:37 - __main__ - ERROR - Processing error: File too large: 10.5MB. Maximum allowed: 10MB
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 395, in main
+    parsed_data = process_invoice(
+                  ^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 157, in process_invoice
+    parsed_data = parser.parse_invoice(tmp_path, vendor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\invoice_parser.py", line 42, in parse_invoice
+    self.config.validate_file(file_path)
+  File "F:\Invoice_to_Excel\config.py", line 161, in validate_file
+    raise ValueError(
+ValueError: File too large: 10.5MB. Maximum allowed: 10MB
+2025-10-18 00:09:18 - root - INFO - ============================================================
+2025-10-18 00:09:18 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:18 - root - INFO - Log level: INFO
+2025-10-18 00:09:18 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:18 - root - INFO - Timestamp: 2025-10-18T00:09:18.564113
+2025-10-18 00:09:18 - root - INFO - ============================================================
+2025-10-18 00:09:24 - root - INFO - ============================================================
+2025-10-18 00:09:24 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:24 - root - INFO - Log level: INFO
+2025-10-18 00:09:24 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:24 - root - INFO - Timestamp: 2025-10-18T00:09:24.040706
+2025-10-18 00:09:24 - root - INFO - ============================================================
+2025-10-18 00:09:26 - root - INFO - ============================================================
+2025-10-18 00:09:26 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:26 - root - INFO - Log level: INFO
+2025-10-18 00:09:26 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:26 - root - INFO - Timestamp: 2025-10-18T00:09:26.122084
+2025-10-18 00:09:26 - root - INFO - ============================================================
+2025-10-18 00:09:26 - __main__ - INFO - Processing invoice: f2 (1).png for vendor: breakthru
+2025-10-18 00:09:27 - __main__ - ERROR - Error processing invoice: File too large: 10.5MB. Maximum allowed: 10MB
+2025-10-18 00:09:27 - __main__ - ERROR - Processing error: File too large: 10.5MB. Maximum allowed: 10MB
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 395, in main
+    parsed_data = process_invoice(
+                  ^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 157, in process_invoice
+    parsed_data = parser.parse_invoice(tmp_path, vendor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\invoice_parser.py", line 42, in parse_invoice
+    self.config.validate_file(file_path)
+  File "F:\Invoice_to_Excel\config.py", line 161, in validate_file
+    raise ValueError(
+ValueError: File too large: 10.5MB. Maximum allowed: 10MB
+2025-10-18 00:09:44 - root - INFO - ============================================================
+2025-10-18 00:09:44 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:44 - root - INFO - Log level: INFO
+2025-10-18 00:09:44 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:44 - root - INFO - Timestamp: 2025-10-18T00:09:44.187944
+2025-10-18 00:09:44 - root - INFO - ============================================================
+2025-10-18 00:09:48 - root - INFO - ============================================================
+2025-10-18 00:09:48 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:48 - root - INFO - Log level: INFO
+2025-10-18 00:09:48 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:48 - root - INFO - Timestamp: 2025-10-18T00:09:48.474128
+2025-10-18 00:09:48 - root - INFO - ============================================================
+2025-10-18 00:09:49 - root - INFO - ============================================================
+2025-10-18 00:09:49 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:49 - root - INFO - Log level: INFO
+2025-10-18 00:09:49 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:49 - root - INFO - Timestamp: 2025-10-18T00:09:49.259291
+2025-10-18 00:09:49 - root - INFO - ============================================================
+2025-10-18 00:09:49 - root - INFO - ============================================================
+2025-10-18 00:09:49 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:49 - root - INFO - Log level: INFO
+2025-10-18 00:09:49 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:49 - root - INFO - Timestamp: 2025-10-18T00:09:49.375446
+2025-10-18 00:09:49 - root - INFO - ============================================================
+2025-10-18 00:09:50 - root - INFO - ============================================================
+2025-10-18 00:09:50 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:50 - root - INFO - Log level: INFO
+2025-10-18 00:09:50 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:50 - root - INFO - Timestamp: 2025-10-18T00:09:50.443822
+2025-10-18 00:09:50 - root - INFO - ============================================================
+2025-10-18 00:09:56 - root - INFO - ============================================================
+2025-10-18 00:09:56 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:09:56 - root - INFO - Log level: INFO
+2025-10-18 00:09:56 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:09:56 - root - INFO - Timestamp: 2025-10-18T00:09:56.717845
+2025-10-18 00:09:56 - root - INFO - ============================================================
+2025-10-18 00:10:00 - root - INFO - ============================================================
+2025-10-18 00:10:00 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:10:00 - root - INFO - Log level: INFO
+2025-10-18 00:10:00 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:10:00 - root - INFO - Timestamp: 2025-10-18T00:10:00.341585
+2025-10-18 00:10:00 - root - INFO - ============================================================
+2025-10-18 00:10:02 - __main__ - INFO - Processing invoice: f2 (1).png for vendor: breakthru
+2025-10-18 00:10:02 - __main__ - ERROR - Error processing invoice: File too large: 10.5MB. Maximum allowed: 10MB
+2025-10-18 00:10:02 - __main__ - ERROR - Processing error: File too large: 10.5MB. Maximum allowed: 10MB
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 395, in main
+    parsed_data = process_invoice(
+                  ^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 157, in process_invoice
+    parsed_data = parser.parse_invoice(tmp_path, vendor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\invoice_parser.py", line 42, in parse_invoice
+    self.config.validate_file(file_path)
+  File "F:\Invoice_to_Excel\config.py", line 161, in validate_file
+    raise ValueError(
+ValueError: File too large: 10.5MB. Maximum allowed: 10MB
+2025-10-18 00:12:03 - root - INFO - ============================================================
+2025-10-18 00:12:03 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:03 - root - INFO - Log level: INFO
+2025-10-18 00:12:03 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:03 - root - INFO - Timestamp: 2025-10-18T00:12:03.570735
+2025-10-18 00:12:03 - root - INFO - ============================================================
+2025-10-18 00:12:10 - root - INFO - ============================================================
+2025-10-18 00:12:10 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:10 - root - INFO - Log level: INFO
+2025-10-18 00:12:10 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:10 - root - INFO - Timestamp: 2025-10-18T00:12:10.427628
+2025-10-18 00:12:10 - root - INFO - ============================================================
+2025-10-18 00:12:15 - root - INFO - ============================================================
+2025-10-18 00:12:15 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:15 - root - INFO - Log level: INFO
+2025-10-18 00:12:15 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:15 - root - INFO - Timestamp: 2025-10-18T00:12:15.150443
+2025-10-18 00:12:15 - root - INFO - ============================================================
+2025-10-18 00:12:15 - root - INFO - ============================================================
+2025-10-18 00:12:15 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:15 - root - INFO - Log level: INFO
+2025-10-18 00:12:15 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:15 - root - INFO - Timestamp: 2025-10-18T00:12:15.276312
+2025-10-18 00:12:15 - root - INFO - ============================================================
+2025-10-18 00:12:15 - root - INFO - ============================================================
+2025-10-18 00:12:15 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:15 - root - INFO - Log level: INFO
+2025-10-18 00:12:15 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:15 - root - INFO - Timestamp: 2025-10-18T00:12:15.417956
+2025-10-18 00:12:15 - root - INFO - ============================================================
+2025-10-18 00:12:16 - root - INFO - ============================================================
+2025-10-18 00:12:16 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:16 - root - INFO - Log level: INFO
+2025-10-18 00:12:16 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:16 - root - INFO - Timestamp: 2025-10-18T00:12:16.176659
+2025-10-18 00:12:16 - root - INFO - ============================================================
+2025-10-18 00:12:20 - root - INFO - ============================================================
+2025-10-18 00:12:20 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:20 - root - INFO - Log level: INFO
+2025-10-18 00:12:20 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:20 - root - INFO - Timestamp: 2025-10-18T00:12:20.762429
+2025-10-18 00:12:20 - root - INFO - ============================================================
+2025-10-18 00:12:23 - root - INFO - ============================================================
+2025-10-18 00:12:23 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:12:23 - root - INFO - Log level: INFO
+2025-10-18 00:12:23 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:12:23 - root - INFO - Timestamp: 2025-10-18T00:12:23.015599
+2025-10-18 00:12:23 - root - INFO - ============================================================
+2025-10-18 00:12:23 - __main__ - INFO - Processing invoice: f2 (1).png for vendor: breakthru
+2025-10-18 00:12:24 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmps8dk4jcs.png for vendor breakthru
+2025-10-18 00:12:24 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmps8dk4jcs.png
+2025-10-18 00:12:24 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmps8dk4jcs.png
+2025-10-18 00:12:24 - invoice_parser - INFO - Processed file into 1 images
+2025-10-18 00:12:25 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-18 00:12:29 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Connection error.
+2025-10-18 00:12:29 - invoice_parser - ERROR - Error parsing invoice: Connection error.
+2025-10-18 00:12:29 - __main__ - ERROR - Error processing invoice: Connection error.
+2025-10-18 00:12:29 - __main__ - ERROR - Processing error: Connection error.
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 926, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 235, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 395, in main
+    parsed_data = process_invoice(
+                  ^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 157, in process_invoice
+    parsed_data = parser.parse_invoice(tmp_path, vendor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\invoice_parser.py", line 57, in parse_invoice
+    raw_response = self.openai_client.parse_invoice(images, prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\openai_client.py", line 70, in parse_invoice
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1156, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2025-10-18 00:13:25 - root - INFO - ============================================================
+2025-10-18 00:13:25 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:13:25 - root - INFO - Log level: INFO
+2025-10-18 00:13:25 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:13:25 - root - INFO - Timestamp: 2025-10-18T00:13:25.152362
+2025-10-18 00:13:25 - root - INFO - ============================================================
+2025-10-18 00:13:28 - root - INFO - ============================================================
+2025-10-18 00:13:28 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:13:28 - root - INFO - Log level: INFO
+2025-10-18 00:13:28 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:13:28 - root - INFO - Timestamp: 2025-10-18T00:13:28.328415
+2025-10-18 00:13:28 - root - INFO - ============================================================
+2025-10-18 00:13:28 - root - INFO - ============================================================
+2025-10-18 00:13:28 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:13:28 - root - INFO - Log level: INFO
+2025-10-18 00:13:28 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:13:28 - root - INFO - Timestamp: 2025-10-18T00:13:28.453249
+2025-10-18 00:13:28 - root - INFO - ============================================================
+2025-10-18 00:13:28 - root - INFO - ============================================================
+2025-10-18 00:13:28 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:13:28 - root - INFO - Log level: INFO
+2025-10-18 00:13:28 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:13:28 - root - INFO - Timestamp: 2025-10-18T00:13:28.564842
+2025-10-18 00:13:28 - root - INFO - ============================================================
+2025-10-18 00:13:30 - root - INFO - ============================================================
+2025-10-18 00:13:30 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:13:30 - root - INFO - Log level: INFO
+2025-10-18 00:13:30 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:13:30 - root - INFO - Timestamp: 2025-10-18T00:13:30.011592
+2025-10-18 00:13:30 - root - INFO - ============================================================
+2025-10-18 00:13:35 - root - INFO - ============================================================
+2025-10-18 00:13:35 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:13:35 - root - INFO - Log level: INFO
+2025-10-18 00:13:35 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:13:35 - root - INFO - Timestamp: 2025-10-18T00:13:35.523441
+2025-10-18 00:13:35 - root - INFO - ============================================================
+2025-10-18 00:13:44 - root - INFO - ============================================================
+2025-10-18 00:13:44 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:13:44 - root - INFO - Log level: INFO
+2025-10-18 00:13:44 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:13:44 - root - INFO - Timestamp: 2025-10-18T00:13:44.696297
+2025-10-18 00:13:44 - root - INFO - ============================================================
+2025-10-18 00:13:45 - __main__ - INFO - Processing invoice: f2 (1).png for vendor: breakthru
+2025-10-18 00:13:46 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmp9t_xbtvd.png for vendor breakthru
+2025-10-18 00:13:46 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmp9t_xbtvd.png
+2025-10-18 00:13:46 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmp9t_xbtvd.png
+2025-10-18 00:13:46 - invoice_parser - INFO - Processed file into 1 images
+2025-10-18 00:13:47 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-18 00:13:51 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Connection error.
+2025-10-18 00:13:51 - invoice_parser - ERROR - Error parsing invoice: Connection error.
+2025-10-18 00:13:51 - __main__ - ERROR - Error processing invoice: Connection error.
+2025-10-18 00:13:51 - __main__ - ERROR - Processing error: Connection error.
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 926, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 235, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 395, in main
+    parsed_data = process_invoice(
+                  ^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 157, in process_invoice
+    parsed_data = parser.parse_invoice(tmp_path, vendor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\invoice_parser.py", line 57, in parse_invoice
+    raw_response = self.openai_client.parse_invoice(images, prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\openai_client.py", line 70, in parse_invoice
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1156, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2025-10-18 00:18:48 - root - INFO - ============================================================
+2025-10-18 00:18:48 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:18:48 - root - INFO - Log level: INFO
+2025-10-18 00:18:48 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:18:48 - root - INFO - Timestamp: 2025-10-18T00:18:48.958562
+2025-10-18 00:18:48 - root - INFO - ============================================================
+2025-10-18 00:18:52 - root - INFO - ============================================================
+2025-10-18 00:18:52 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:18:52 - root - INFO - Log level: INFO
+2025-10-18 00:18:52 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:18:52 - root - INFO - Timestamp: 2025-10-18T00:18:52.675836
+2025-10-18 00:18:52 - root - INFO - ============================================================
+2025-10-18 00:18:54 - root - INFO - ============================================================
+2025-10-18 00:18:54 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:18:54 - root - INFO - Log level: INFO
+2025-10-18 00:18:54 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:18:54 - root - INFO - Timestamp: 2025-10-18T00:18:54.006666
+2025-10-18 00:18:54 - root - INFO - ============================================================
+2025-10-18 00:19:03 - root - INFO - ============================================================
+2025-10-18 00:19:03 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:19:03 - root - INFO - Log level: INFO
+2025-10-18 00:19:03 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:19:03 - root - INFO - Timestamp: 2025-10-18T00:19:03.340220
+2025-10-18 00:19:03 - root - INFO - ============================================================
+2025-10-18 00:19:09 - root - INFO - ============================================================
+2025-10-18 00:19:09 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:19:09 - root - INFO - Log level: INFO
+2025-10-18 00:19:09 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:19:09 - root - INFO - Timestamp: 2025-10-18T00:19:09.635835
+2025-10-18 00:19:09 - root - INFO - ============================================================
+2025-10-18 00:19:09 - root - INFO - ============================================================
+2025-10-18 00:19:09 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:19:09 - root - INFO - Log level: INFO
+2025-10-18 00:19:09 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:19:09 - root - INFO - Timestamp: 2025-10-18T00:19:09.807808
+2025-10-18 00:19:09 - root - INFO - ============================================================
+2025-10-18 00:19:09 - root - INFO - ============================================================
+2025-10-18 00:19:09 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:19:09 - root - INFO - Log level: INFO
+2025-10-18 00:19:09 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:19:09 - root - INFO - Timestamp: 2025-10-18T00:19:09.915332
+2025-10-18 00:19:09 - root - INFO - ============================================================
+2025-10-18 00:19:11 - root - INFO - ============================================================
+2025-10-18 00:19:11 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:19:11 - root - INFO - Log level: INFO
+2025-10-18 00:19:11 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:19:11 - root - INFO - Timestamp: 2025-10-18T00:19:11.058062
+2025-10-18 00:19:11 - root - INFO - ============================================================
+2025-10-18 00:19:16 - root - INFO - ============================================================
+2025-10-18 00:19:16 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:19:16 - root - INFO - Log level: INFO
+2025-10-18 00:19:16 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:19:16 - root - INFO - Timestamp: 2025-10-18T00:19:16.276679
+2025-10-18 00:19:16 - root - INFO - ============================================================
+2025-10-18 00:19:18 - root - INFO - ============================================================
+2025-10-18 00:19:18 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:19:18 - root - INFO - Log level: INFO
+2025-10-18 00:19:18 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:19:18 - root - INFO - Timestamp: 2025-10-18T00:19:18.999689
+2025-10-18 00:19:19 - root - INFO - ============================================================
+2025-10-18 00:19:19 - __main__ - INFO - Processing invoice: f2 (1).png for vendor: breakthru
+2025-10-18 00:19:20 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmp6hef3wgo.png for vendor breakthru
+2025-10-18 00:19:20 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmp6hef3wgo.png
+2025-10-18 00:19:20 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmp6hef3wgo.png
+2025-10-18 00:19:20 - invoice_parser - INFO - Processed file into 1 images
+2025-10-18 00:19:20 - openai_client - INFO - Resized image from (1565, 2000) to (1565, 2000)
+2025-10-18 00:19:24 - openai_client - INFO - Image size: 4758428 base64 chars
+2025-10-18 00:19:24 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-18 00:21:29 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Request timed out.
+2025-10-18 00:21:29 - invoice_parser - ERROR - Error parsing invoice: Request timed out.
+2025-10-18 00:21:29 - __main__ - ERROR - Error processing invoice: Request timed out.
+2025-10-18 00:21:29 - __main__ - ERROR - Processing error: Request timed out.
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    with map_exceptions(exc_map):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 926, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 235, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 395, in main
+    parsed_data = process_invoice(
+                  ^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 157, in process_invoice
+    parsed_data = parser.parse_invoice(tmp_path, vendor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\invoice_parser.py", line 57, in parse_invoice
+    raw_response = self.openai_client.parse_invoice(images, prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\openai_client.py", line 80, in parse_invoice
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1156, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1000, in request
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.
+2025-10-18 00:21:39 - root - INFO - ============================================================
+2025-10-18 00:21:39 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:21:39 - root - INFO - Log level: INFO
+2025-10-18 00:21:39 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:21:39 - root - INFO - Timestamp: 2025-10-18T00:21:39.380925
+2025-10-18 00:21:39 - root - INFO - ============================================================
+2025-10-18 00:21:41 - root - INFO - ============================================================
+2025-10-18 00:21:41 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:21:41 - root - INFO - Log level: INFO
+2025-10-18 00:21:41 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:21:41 - root - INFO - Timestamp: 2025-10-18T00:21:41.742100
+2025-10-18 00:21:41 - root - INFO - ============================================================
+2025-10-18 00:21:41 - root - INFO - ============================================================
+2025-10-18 00:21:41 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:21:41 - root - INFO - Log level: INFO
+2025-10-18 00:21:41 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:21:41 - root - INFO - Timestamp: 2025-10-18T00:21:41.876271
+2025-10-18 00:21:41 - root - INFO - ============================================================
+2025-10-18 00:21:41 - root - INFO - ============================================================
+2025-10-18 00:21:41 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:21:41 - root - INFO - Log level: INFO
+2025-10-18 00:21:41 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:21:41 - root - INFO - Timestamp: 2025-10-18T00:21:41.998805
+2025-10-18 00:21:41 - root - INFO - ============================================================
+2025-10-18 00:21:42 - root - INFO - ============================================================
+2025-10-18 00:21:42 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:21:42 - root - INFO - Log level: INFO
+2025-10-18 00:21:42 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:21:42 - root - INFO - Timestamp: 2025-10-18T00:21:42.966222
+2025-10-18 00:21:42 - root - INFO - ============================================================
+2025-10-18 00:21:47 - root - INFO - ============================================================
+2025-10-18 00:21:47 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:21:47 - root - INFO - Log level: INFO
+2025-10-18 00:21:47 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:21:47 - root - INFO - Timestamp: 2025-10-18T00:21:47.897265
+2025-10-18 00:21:47 - root - INFO - ============================================================
+2025-10-18 00:21:50 - root - INFO - ============================================================
+2025-10-18 00:21:50 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:21:50 - root - INFO - Log level: INFO
+2025-10-18 00:21:50 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:21:50 - root - INFO - Timestamp: 2025-10-18T00:21:50.483380
+2025-10-18 00:21:50 - root - INFO - ============================================================
+2025-10-18 00:21:50 - __main__ - INFO - Processing invoice: f2 (2).png for vendor: breakthru
+2025-10-18 00:21:51 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpdbz6xqjm.png for vendor breakthru
+2025-10-18 00:21:51 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpdbz6xqjm.png
+2025-10-18 00:21:51 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpdbz6xqjm.png
+2025-10-18 00:21:51 - invoice_parser - INFO - Processed file into 1 images
+2025-10-18 00:21:51 - openai_client - INFO - Image size: 2837392 base64 chars
+2025-10-18 00:21:51 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-18 00:22:37 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-18 00:22:37 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-18 00:22:37 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-18 00:22:37 - validators - INFO - Data processing complete. No validation flags.
+2025-10-18 00:22:37 - invoice_parser - INFO - Successfully parsed invoice with 0 items
+2025-10-18 00:22:37 - __main__ - INFO - Invoice parsed successfully
+2025-10-18 00:22:37 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-18 00:22:37 - excel_exporter - INFO - Creating summary sheet...
+2025-10-18 00:22:37 - excel_exporter - INFO - Creating items sheet...
+2025-10-18 00:22:37 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-18 00:22:37 - excel_exporter - INFO - Creating validation sheet...
+2025-10-18 00:22:37 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmpdw9easrg.xlsx
+2025-10-18 00:22:37 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmpdw9easrg.xlsx
+2025-10-18 00:22:37 - root - INFO - ============================================================
+2025-10-18 00:22:37 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:22:37 - root - INFO - Log level: INFO
+2025-10-18 00:22:37 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:22:37 - root - INFO - Timestamp: 2025-10-18T00:22:37.847472
+2025-10-18 00:22:37 - root - INFO - ============================================================
+2025-10-18 00:26:55 - root - INFO - ============================================================
+2025-10-18 00:26:55 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:26:55 - root - INFO - Log level: INFO
+2025-10-18 00:26:55 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:26:55 - root - INFO - Timestamp: 2025-10-18T00:26:55.426304
+2025-10-18 00:26:55 - root - INFO - ============================================================
+2025-10-18 00:27:00 - root - INFO - ============================================================
+2025-10-18 00:27:00 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:27:00 - root - INFO - Log level: INFO
+2025-10-18 00:27:00 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:27:00 - root - INFO - Timestamp: 2025-10-18T00:27:00.619207
+2025-10-18 00:27:00 - root - INFO - ============================================================
+2025-10-18 00:27:00 - root - INFO - ============================================================
+2025-10-18 00:27:00 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:27:00 - root - INFO - Log level: INFO
+2025-10-18 00:27:00 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:27:00 - root - INFO - Timestamp: 2025-10-18T00:27:00.802803
+2025-10-18 00:27:00 - root - INFO - ============================================================
+2025-10-18 00:27:00 - root - INFO - ============================================================
+2025-10-18 00:27:00 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:27:00 - root - INFO - Log level: INFO
+2025-10-18 00:27:00 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:27:00 - root - INFO - Timestamp: 2025-10-18T00:27:00.917766
+2025-10-18 00:27:00 - root - INFO - ============================================================
+2025-10-18 00:27:01 - root - INFO - ============================================================
+2025-10-18 00:27:01 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:27:01 - root - INFO - Log level: INFO
+2025-10-18 00:27:01 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:27:01 - root - INFO - Timestamp: 2025-10-18T00:27:01.889035
+2025-10-18 00:27:01 - root - INFO - ============================================================
+2025-10-18 00:27:08 - root - INFO - ============================================================
+2025-10-18 00:27:08 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:27:08 - root - INFO - Log level: INFO
+2025-10-18 00:27:08 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:27:08 - root - INFO - Timestamp: 2025-10-18T00:27:08.502530
+2025-10-18 00:27:08 - root - INFO - ============================================================
+2025-10-18 00:27:10 - root - INFO - ============================================================
+2025-10-18 00:27:10 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:27:10 - root - INFO - Log level: INFO
+2025-10-18 00:27:10 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:27:10 - root - INFO - Timestamp: 2025-10-18T00:27:10.145672
+2025-10-18 00:27:10 - root - INFO - ============================================================
+2025-10-18 00:27:10 - __main__ - INFO - Processing invoice: f2 (2).png for vendor: breakthru
+2025-10-18 00:27:11 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpaj9fmgwj.png for vendor breakthru
+2025-10-18 00:27:11 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpaj9fmgwj.png
+2025-10-18 00:27:11 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpaj9fmgwj.png
+2025-10-18 00:27:11 - invoice_parser - INFO - Processed file into 1 images
+2025-10-18 00:27:11 - openai_client - INFO - Image size: 2837392 base64 chars
+2025-10-18 00:27:11 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-18 00:27:49 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-18 00:27:49 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-18 00:27:49 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-18 00:27:49 - validators - INFO - Data processing complete. No validation flags.
+2025-10-18 00:27:49 - invoice_parser - INFO - Successfully parsed invoice with 17 items
+2025-10-18 00:27:49 - __main__ - INFO - Invoice parsed successfully
+2025-10-18 00:27:49 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-18 00:27:49 - excel_exporter - INFO - Creating summary sheet...
+2025-10-18 00:27:49 - excel_exporter - INFO - Creating items sheet...
+2025-10-18 00:27:49 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-18 00:27:49 - excel_exporter - INFO - Creating validation sheet...
+2025-10-18 00:27:49 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp6nzjv3df.xlsx
+2025-10-18 00:27:49 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp6nzjv3df.xlsx
+2025-10-18 00:27:50 - root - INFO - ============================================================
+2025-10-18 00:27:50 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:27:50 - root - INFO - Log level: INFO
+2025-10-18 00:27:50 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:27:50 - root - INFO - Timestamp: 2025-10-18T00:27:50.179936
+2025-10-18 00:27:50 - root - INFO - ============================================================
+2025-10-18 00:28:55 - root - INFO - ============================================================
+2025-10-18 00:28:55 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:28:55 - root - INFO - Log level: INFO
+2025-10-18 00:28:55 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:28:55 - root - INFO - Timestamp: 2025-10-18T00:28:55.386923
+2025-10-18 00:28:55 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:28:58 - root - INFO - Log level: INFO
+2025-10-18 00:28:58 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:28:58 - root - INFO - Timestamp: 2025-10-18T00:28:58.726648
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:28:58 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:28:58 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:28:58 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:28:58 - root - INFO - Log level: INFO
+2025-10-18 00:28:58 - root - INFO - Log level: INFO
+2025-10-18 00:28:58 - root - INFO - Log level: INFO
+2025-10-18 00:28:58 - root - INFO - Log level: INFO
+2025-10-18 00:28:58 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:28:58 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:28:58 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:28:58 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:28:58 - root - INFO - Timestamp: 2025-10-18T00:28:58.897020
+2025-10-18 00:28:58 - root - INFO - Timestamp: 2025-10-18T00:28:58.897020
+2025-10-18 00:28:58 - root - INFO - Timestamp: 2025-10-18T00:28:58.897020
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - Timestamp: 2025-10-18T00:28:58.897020
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:28:58 - root - INFO - ============================================================
+2025-10-18 00:29:00 - root - INFO - ============================================================
+2025-10-18 00:29:00 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:29:00 - root - INFO - Log level: INFO
+2025-10-18 00:29:00 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:29:00 - root - INFO - Timestamp: 2025-10-18T00:29:00.057788
+2025-10-18 00:29:00 - root - INFO - ============================================================
+2025-10-18 00:29:06 - root - INFO - ============================================================
+2025-10-18 00:29:06 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:29:06 - root - INFO - Log level: INFO
+2025-10-18 00:29:06 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:29:06 - root - INFO - Timestamp: 2025-10-18T00:29:06.044530
+2025-10-18 00:29:06 - root - INFO - ============================================================
+2025-10-18 00:29:19 - root - INFO - ============================================================
+2025-10-18 00:29:19 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:29:19 - root - INFO - Log level: INFO
+2025-10-18 00:29:19 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:29:19 - root - INFO - Timestamp: 2025-10-18T00:29:19.854439
+2025-10-18 00:29:19 - root - INFO - ============================================================
+2025-10-18 00:29:19 - __main__ - INFO - Processing invoice: f2 (2).png for vendor: breakthru
+2025-10-18 00:29:20 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpnldiyjk0.png for vendor breakthru
+2025-10-18 00:29:20 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpnldiyjk0.png
+2025-10-18 00:29:20 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpnldiyjk0.png
+2025-10-18 00:29:20 - invoice_parser - INFO - Processed file into 1 images
+2025-10-18 00:29:21 - openai_client - INFO - Image size: 2837392 base64 chars
+2025-10-18 00:29:21 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-18 00:29:24 - openai_client - ERROR - Error parsing invoice with OpenAI Vision: Connection error.
+2025-10-18 00:29:24 - invoice_parser - ERROR - Error parsing invoice: Connection error.
+2025-10-18 00:29:24 - __main__ - ERROR - Error processing invoice: Connection error.
+2025-10-18 00:29:24 - __main__ - ERROR - Processing error: Connection error.
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpcore\_sync\http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 926, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 235, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 395, in main
+    parsed_data = process_invoice(
+                  ^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\streamlit_app.py", line 157, in process_invoice
+    parsed_data = parser.parse_invoice(tmp_path, vendor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\invoice_parser.py", line 57, in parse_invoice
+    raw_response = self.openai_client.parse_invoice(images, prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\openai_client.py", line 80, in parse_invoice
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1156, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Invoice_to_Excel\venv\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2025-10-18 00:29:49 - root - INFO - ============================================================
+2025-10-18 00:29:49 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:29:49 - root - INFO - Log level: INFO
+2025-10-18 00:29:49 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:29:49 - root - INFO - Timestamp: 2025-10-18T00:29:49.150231
+2025-10-18 00:29:49 - root - INFO - ============================================================
+2025-10-18 00:30:06 - root - INFO - ============================================================
+2025-10-18 00:30:06 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:30:06 - root - INFO - Log level: INFO
+2025-10-18 00:30:06 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:30:06 - root - INFO - Timestamp: 2025-10-18T00:30:06.671814
+2025-10-18 00:30:06 - root - INFO - ============================================================
+2025-10-18 00:30:06 - __main__ - INFO - Processing invoice: f2 (2).png for vendor: breakthru
+2025-10-18 00:30:07 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmpy9bfnywv.png for vendor breakthru
+2025-10-18 00:30:07 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmpy9bfnywv.png
+2025-10-18 00:30:07 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmpy9bfnywv.png
+2025-10-18 00:30:07 - invoice_parser - INFO - Processed file into 1 images
+2025-10-18 00:30:08 - openai_client - INFO - Image size: 2837392 base64 chars
+2025-10-18 00:30:08 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-18 00:30:44 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-18 00:30:44 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-18 00:30:44 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-18 00:30:44 - validators - INFO - Data processing complete. No validation flags.
+2025-10-18 00:30:44 - invoice_parser - INFO - Successfully parsed invoice with 15 items
+2025-10-18 00:30:44 - __main__ - INFO - Invoice parsed successfully
+2025-10-18 00:30:44 - excel_exporter - INFO - Starting Excel export for invoice: 122041188
+2025-10-18 00:30:44 - excel_exporter - INFO - Creating summary sheet...
+2025-10-18 00:30:44 - excel_exporter - INFO - Creating items sheet...
+2025-10-18 00:30:44 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-18 00:30:44 - excel_exporter - INFO - Creating validation sheet...
+2025-10-18 00:30:44 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmpn_45prny.xlsx
+2025-10-18 00:30:44 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmpn_45prny.xlsx
+2025-10-18 00:30:44 - root - INFO - ============================================================
+2025-10-18 00:30:44 - root - INFO - Invoice Parser Application Started
+2025-10-18 00:30:44 - root - INFO - Log level: INFO
+2025-10-18 00:30:44 - root - INFO - Log file: invoice_parser.log
+2025-10-18 00:30:44 - root - INFO - Timestamp: 2025-10-18T00:30:44.988755
+2025-10-18 00:30:44 - root - INFO - ============================================================
+2025-10-19 15:27:24 - root - INFO - ============================================================
+2025-10-19 15:27:25 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:27:25 - root - INFO - Log level: INFO
+2025-10-19 15:27:25 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:27:25 - root - INFO - Timestamp: 2025-10-19T15:27:25.148452
+2025-10-19 15:27:25 - root - INFO - ============================================================
+2025-10-19 15:30:19 - root - INFO - ============================================================
+2025-10-19 15:30:19 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:30:19 - root - INFO - Log level: INFO
+2025-10-19 15:30:19 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:30:19 - root - INFO - Timestamp: 2025-10-19T15:30:19.029820
+2025-10-19 15:30:19 - root - INFO - ============================================================
+2025-10-19 15:30:19 - root - INFO - ============================================================
+2025-10-19 15:30:19 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:30:19 - root - INFO - Log level: INFO
+2025-10-19 15:30:19 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:30:19 - root - INFO - Timestamp: 2025-10-19T15:30:19.452932
+2025-10-19 15:30:19 - root - INFO - ============================================================
+2025-10-19 15:30:19 - root - INFO - ============================================================
+2025-10-19 15:30:19 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:30:19 - root - INFO - Log level: INFO
+2025-10-19 15:30:19 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:30:19 - root - INFO - Timestamp: 2025-10-19T15:30:19.579936
+2025-10-19 15:30:19 - root - INFO - ============================================================
+2025-10-19 15:30:35 - root - INFO - ============================================================
+2025-10-19 15:30:35 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:30:35 - root - INFO - Log level: INFO
+2025-10-19 15:30:35 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:30:35 - root - INFO - Timestamp: 2025-10-19T15:30:35.238406
+2025-10-19 15:30:35 - root - INFO - ============================================================
+2025-10-19 15:30:47 - root - INFO - ============================================================
+2025-10-19 15:30:48 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:30:48 - root - INFO - Log level: INFO
+2025-10-19 15:30:48 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:30:48 - root - INFO - Timestamp: 2025-10-19T15:30:48.317818
+2025-10-19 15:30:48 - root - INFO - ============================================================
+2025-10-19 15:30:55 - root - INFO - ============================================================
+2025-10-19 15:30:55 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:30:55 - root - INFO - Log level: INFO
+2025-10-19 15:30:55 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:30:55 - root - INFO - Timestamp: 2025-10-19T15:30:55.876944
+2025-10-19 15:30:55 - root - INFO - ============================================================
+2025-10-19 15:30:56 - __main__ - INFO - Processing invoice: f1.png for vendor: lakeshore
+2025-10-19 15:30:57 - invoice_parser - INFO - Processing C:\Users\DELL\AppData\Local\Temp\tmp42x9o8wd.png for vendor lakeshore
+2025-10-19 15:30:57 - file_processor - INFO - Loading image: C:\Users\DELL\AppData\Local\Temp\tmp42x9o8wd.png
+2025-10-19 15:30:57 - file_processor - INFO - Successfully loaded image: C:\Users\DELL\AppData\Local\Temp\tmp42x9o8wd.png
+2025-10-19 15:30:57 - invoice_parser - INFO - Processed file into 1 images
+2025-10-19 15:30:58 - openai_client - INFO - Image size: 796996 base64 chars
+2025-10-19 15:30:58 - openai_client - INFO - Sending request to OpenAI with 1 images
+2025-10-19 15:31:31 - openai_client - INFO - Successfully received response from OpenAI
+2025-10-19 15:31:31 - openai_client - INFO - Raw response saved to raw_openai_response.txt
+2025-10-19 15:31:31 - invoice_parser - INFO - JSON is already valid, no fixing needed
+2025-10-19 15:31:31 - validators - INFO - Data processing complete. No validation flags.
+2025-10-19 15:31:31 - invoice_parser - INFO - Successfully parsed invoice with 8 items
+2025-10-19 15:31:31 - __main__ - INFO - Invoice parsed successfully
+2025-10-19 15:31:31 - excel_exporter - INFO - Starting Excel export for invoice: 125504
+2025-10-19 15:31:31 - excel_exporter - INFO - Creating summary sheet...
+2025-10-19 15:31:31 - excel_exporter - INFO - Creating items sheet...
+2025-10-19 15:31:31 - excel_exporter - INFO - Creating vendor sheet...
+2025-10-19 15:31:31 - excel_exporter - INFO - Creating validation sheet...
+2025-10-19 15:31:31 - excel_exporter - INFO - Excel file exported successfully to: C:\Users\DELL\AppData\Local\Temp\tmp1h8_hph2.xlsx
+2025-10-19 15:31:31 - __main__ - INFO - Excel file generated: C:\Users\DELL\AppData\Local\Temp\tmp1h8_hph2.xlsx
+2025-10-19 15:31:32 - root - INFO - ============================================================
+2025-10-19 15:31:32 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:31:32 - root - INFO - Log level: INFO
+2025-10-19 15:31:32 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:31:32 - root - INFO - Timestamp: 2025-10-19T15:31:32.137826
+2025-10-19 15:31:32 - root - INFO - ============================================================
+2025-10-19 15:32:08 - root - INFO - ============================================================
+2025-10-19 15:32:08 - root - INFO - Invoice Parser Application Started
+2025-10-19 15:32:08 - root - INFO - Log level: INFO
+2025-10-19 15:32:08 - root - INFO - Log file: invoice_parser.log
+2025-10-19 15:32:08 - root - INFO - Timestamp: 2025-10-19T15:32:08.441510
+2025-10-19 15:32:08 - root - INFO - ============================================================
+2025-10-26 15:53:54 - root - INFO - ============================================================
+2025-10-26 15:53:54 - root - INFO - Invoice Parser Application Started
+2025-10-26 15:53:54 - root - INFO - Log level: INFO
+2025-10-26 15:53:54 - root - INFO - Log file: invoice_parser.log
+2025-10-26 15:53:54 - root - INFO - Timestamp: 2025-10-26T15:53:54.515714
+2025-10-26 15:53:54 - root - INFO - ============================================================

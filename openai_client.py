@@ -34,12 +34,22 @@ class OpenAIClient:
             # Convert images to base64
             image_contents = []
             for img in images:
-                # Convert PIL image to base64
+                # Resize if too large (max 2000px on longest side)
+                max_dimension = 2000
+                if max(img.size) > max_dimension:
+                    ratio = max_dimension / max(img.size)
+                    new_size = tuple(int(dim * ratio) for dim in img.size)
+                    img = img.resize(new_size, Image.Resampling.LANCZOS)
+                    self.logger.info(f"Resized image from {img.size} to {new_size}")
+
+                # Convert PIL image to base64 with compression
                 img_buffer = io.BytesIO()
-                img.save(img_buffer, format='PNG')
+                img.save(img_buffer, format='PNG', optimize=True)
                 img_buffer.seek(0)
                 img_base64 = base64.b64encode(img_buffer.getvalue()).decode('utf-8')
-                
+
+                self.logger.info(f"Image size: {len(img_base64)} base64 chars")
+
                 image_contents.append({
                     "type": "image_url",
                     "image_url": {
@@ -47,8 +57,12 @@ class OpenAIClient:
                     }
                 })
             
-            # Prepare the message
+            # Prepare the message with system instruction
             messages = [
+                {
+                    "role": "system",
+                    "content": "You are an expert invoice data extraction system. Follow the provided JSON instructions exactly. Return ONLY valid JSON output without code fences, markdown, or commentary."
+                },
                 {
                     "role": "user",
                     "content": [
@@ -67,7 +81,8 @@ class OpenAIClient:
                 model=self.config.model_name,
                 messages=messages,
                 max_tokens=self.config.max_tokens,
-                temperature=self.config.temperature
+                temperature=self.config.temperature,
+                timeout=120.0  # 2 minute timeout for large requests
             )
             
             # Extract the response content

@@ -10,7 +10,7 @@ from datetime import datetime
 def setup_logging(
     log_level: str = "INFO",
     log_file: str = "invoice_parser.log",
-    max_bytes: int = 10 * 1024 * 1024,  # 10MB
+    max_bytes: int = 20 * 1024 * 1024,  # 20MB
     backup_count: int = 5
 ):
     """
