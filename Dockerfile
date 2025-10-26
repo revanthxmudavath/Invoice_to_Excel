@@ -34,4 +34,4 @@ EXPOSE 8501
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
   CMD curl -f http://localhost:${PORT}/_stcore/health || exit 1
 
-CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501"]
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
